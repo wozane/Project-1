@@ -229,6 +229,7 @@
       </section>
     </section>
 
+<!-- Commnunity -->
     <section>
       <header>
         <p>COMMUNITY</p>
@@ -260,24 +261,13 @@
       </section>
     </section>
 
+<!-- Sum up page -->
     <section >
       <header>
         <p>NOW WE CAN WORK WITH YOU.</p>
       </header>
+      <section id="map"></section>
       <section>
-        <section id="map"></section>
-          <script>
-            function myMap() {
-              var mapProp= {
-                center:new google.maps.LatLng(51.508742,-0.120850),
-                zoom:5,
-              };
-              var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-            }
-          </script>
-          <script src="https://location of the office"></script>
-      </section>
-      <aside>
         <img src="saved" alt="Rebased logo">
         <address>
           Rebased sp. z o.o.<br>
@@ -290,7 +280,7 @@
           VAT-ID:<br>
           <strong>PL1182098300</strong>
         </p>
-      </aside>
+      </section>
       <section>
         <p>WANT US TO WORK WITH YOU? <strong>CONTACT US!</strong></p>
         <p>
@@ -298,13 +288,15 @@
           …or just email us at <strong>contact@rebased.pl</strong>
         </p>
         <form>
-          full name <input type="text" name="fname">
-          email <input type="text" name="lname"><br>
+          <label for="fullname">Full name:</label>
+          <input type="text" name="fname">
+          <label for="email">Email:</label>
+          <input type="text" name="lname"><br>
           <input type="submit" value="send">
         </form>
-        <p>
+        <footer>
           By submitting your name and email address you allow us to use it for business purposes. Don't worry, your data is safe with us, we'll use it only to contact you.
-        </p>
+        </footer>
       </section>
     </section>
 
