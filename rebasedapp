@@ -27,13 +27,11 @@
         </ul>
       </nav>
     </header>
-
 <!-- main body -->
     <section>
       <img src="tbc" alt="cool photo of platic caps(background pic)">
-      <p>plastikowe złoto</p>
+      <p>plastikowe złoto</p> <!-- draft version -->
     </section>
-
 <!-- list of available options -->
     <section>
       <ul>
@@ -52,12 +50,15 @@
         <li>
           <figure>
             <img src="tbc" alt="photo of events">
-            <figcaption>Akcje w trakcjie</figcaption>
+            <figcaption>Akcje/Eventy</figcaption>
           </figure>
         </li>
       </ul>
+      <section>
+        <h4>o co tu chodzi?</h4>
+        <p>krótka notka opisująca cel appki</p>
+      </section>
     </section>
-
 
     <footer>
       <p></p>
