@@ -1,0 +1,19 @@
+<!-- Draft version of aneta's app -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Plastic cap</title>
+	</head>
+
+	<body>
+
+<!-- navigation menu -->	
+		<nav><ul><li></li></ul></nav>
+
+<!-- main body -->
+		<img src="tbc" alt="cool photo of platic caps">
+		<p>slogan</p>
+		
+	</body>
+</html>
