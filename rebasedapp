@@ -4,6 +4,7 @@
 <html>
   <head>
     <title>Plastic cap</title>
+    <meta charset="utf-8">
   </head>
 
   <body>
@@ -57,6 +58,9 @@
       <section>
         <h4>o co tu chodzi?</h4>
         <p>krótka notka opisująca cel appki</p>
+      </section>
+      <section>
+        <p>Logowanie do konta</p>
       </section>
     </section>
 
