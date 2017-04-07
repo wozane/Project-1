@@ -68,6 +68,7 @@
             <label>Hasło</label>
             <input type="text" name="password">
             <input type="submit" name="submit" value="Submit">
+            <p>Nie masz konta? <a href="new">Otwieramy</a></p>
           </fieldset>
         </form>
       </section>
