@@ -60,7 +60,14 @@
         <p>krótka notka opisująca cel appki</p>
       </section>
       <section>
-        <p>Logowanie do konta</p>
+        <p>Zaloguj się</p>
+        <form>
+          <label>Login</label>
+          <input type="text" name="name">
+          <label>Hasło</label>
+          <input type="text" name="password">
+          <input type="submit" name="submit" value="Submit">
+        </form>
       </section>
     </section>
 
