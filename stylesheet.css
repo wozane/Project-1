@@ -12,5 +12,11 @@ body {
   margin-right: 80px; 
 }
 
+li {
+  display: inline; 
+}
+
+
+/*-- id --*/
 #logo { float: left; }
 
