@@ -37,6 +37,27 @@ a:hover {
   word-spacing: 1em;
 }
 
+/*-- intro seciton --*/
+.intro {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+
+}
+.intro-header {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-contact {
+  width: 30%;
+  float: left;
+  padding: 15px;
+}
+
 /*-- id --*/
 #logo { float: left; }
 
