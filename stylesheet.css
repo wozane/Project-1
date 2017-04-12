@@ -16,6 +16,17 @@ li {
   display: inline; 
 }
 
+/*-- link --*/
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+/*-- link hovered --*/
+a:hover {
+    background-color: blue;
+    color: white;
+}
 
 /*-- class --*/
 .nav-bar {
