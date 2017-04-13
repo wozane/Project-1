@@ -59,6 +59,21 @@ a:hover {
   padding: 15px;
 }
 
+.contact-box {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.submit-box {
+  background-color: #73e600;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
 /*-- id --*/
 #logo { float: left; }
 
