@@ -29,6 +29,13 @@ a:hover {
     color: white;
 }
 
+/*-- sections header --*/
+.section-header {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+}
+
 /*-- navigation class --*/
 .nav-bar {
   margin: 0;
