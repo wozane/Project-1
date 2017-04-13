@@ -36,6 +36,19 @@ a:hover {
   font-weight: 900;
 }
 
+/*-- img in sections --*/
+.img-sec {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 /*-- navigation class --*/
 .nav-bar {
   margin: 0;
@@ -97,7 +110,7 @@ a:hover {
 }
 
 /*-- team section --*/
-.team-sec {
+.img-sec {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
