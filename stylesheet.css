@@ -128,6 +128,16 @@ a:hover {
   margin: auto;
 }
 
+.open-border {
+  display: -webkit-flex;
+  display: -ms-flex;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-bottom: 2px solid lightgrey;
+}
+
+
 /*-- id --*/
 #logo { float: left; }
 
