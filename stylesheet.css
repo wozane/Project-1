@@ -122,6 +122,12 @@ a:hover {
   align-items: center;
 }
 
+/*-- open source section --*/
+.open-logo {
+  display: block;
+  margin: auto;
+}
+
 /*-- id --*/
 #logo { float: left; }
 
