@@ -68,15 +68,15 @@ a:hover {
 }
 
 .intro-header {
-   -webkit-flex: 2 0 0; 
-   flex: 2 0 0;
+  -webkit-flex: 2 0 0; 
+  flex: 2 0 0;
   align-items: center;
   justify-content: center;
 }
 
 .intro-contact {
-   -webkit-flex: 1 0 0;
-   flex: 1 0 0;
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0;
   padding: 15px;
 }
 
@@ -121,6 +121,28 @@ a:hover {
   -ms-flex-align: center;
   align-items: center;
 }
+
+/*-- open source section --*/
+.open-logo {
+  display: block;
+  margin: auto;
+}
+
+.open-border {
+  display: -webkit-flex;
+  display: -ms-flex;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-bottom: 2px solid lightgrey;
+}
+
+.open-part {
+  display: block;
+  margin: auto;
+  float: right;
+}
+
 
 /*-- id --*/
 #logo { float: left; }
