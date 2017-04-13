@@ -85,6 +85,10 @@ a:hover {
   text-justify: inter-word;
 }
 
+.intro-text {
+  text-align: center;
+}
+
 /*-- id --*/
 #logo { float: left; }
 
