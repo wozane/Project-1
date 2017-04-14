@@ -156,6 +156,20 @@ a:hover {
   font-style: normal;
 }
 
+.sum-contact{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.sum-main-box {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
 
 /*-- id --*/
 #logo { float: left; }
