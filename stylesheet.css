@@ -151,6 +151,12 @@ a:hover {
   flex: 1 0 0;
 }
 
+/*-- sum up page --*/
+.address {
+  font-style: normal;
+}
+
+
 /*-- id --*/
 #logo { float: left; }
 
