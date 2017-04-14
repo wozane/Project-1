@@ -85,6 +85,8 @@ a:hover {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
+  width: 200px; 
+  height: 25px;
 }
 
 .submit-box {
@@ -93,6 +95,8 @@ a:hover {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  width: 200px; 
+  height: 25px;
 }
 
 .text-right {
@@ -162,6 +166,8 @@ a:hover {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+  width: 150px; 
+  height: 25px;
 }
 
 .sum-main-box {
