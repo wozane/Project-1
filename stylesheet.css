@@ -176,6 +176,13 @@ a:hover {
   font-weight: normal;
 }
 
+/*-- footer --*/
+.footer {
+  background-color: blue;
+  color: white;
+  text-align: center;
+  font-size: 75%;
+}
 
 /*-- id --*/
 #logo { float: left; }
