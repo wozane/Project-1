@@ -143,6 +143,13 @@ a:hover {
   float: right;
 }
 
+/*-- comm section --*/
+.comm-logo {
+  display: block;
+  margin: auto;
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0;
+}
 
 /*-- id --*/
 #logo { float: left; }
