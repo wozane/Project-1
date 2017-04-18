@@ -85,6 +85,8 @@ a:hover {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
+  width: 200px; 
+  height: 25px;
 }
 
 .submit-box {
@@ -93,6 +95,8 @@ a:hover {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  width: 200px; 
+  height: 25px;
 }
 
 .text-right {
@@ -103,6 +107,7 @@ a:hover {
   font-size: 75%;
   text-align: justify;
   text-justify: inter-word;
+  text-align: center;
 }
 
 .intro-text {
@@ -149,6 +154,40 @@ a:hover {
   margin: auto;
   -webkit-flex: 1 0 0;
   flex: 1 0 0;
+}
+
+/*-- sum up page --*/
+.address {
+  font-style: normal;
+}
+
+.sum-contact{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 150px; 
+  height: 25px;
+}
+
+.sum-main-box {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sum-green {
+  color: #73e600;
+  font-size: 150%;
+  font-weight: normal;
+}
+
+/*-- footer --*/
+.footer {
+  background-color: blue;
+  color: white;
+  text-align: center;
+  font-size: 75%;
 }
 
 /*-- id --*/
