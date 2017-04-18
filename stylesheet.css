@@ -35,6 +35,7 @@ body > section > header {
   font-size: 40px;
   font-weight: 900;
   text-transform: uppercase;
+  margin: auto;
 }
 
 /*-- img in sections --*/
@@ -126,6 +127,7 @@ body > section > header {
 }
 
 /*-- team section --*/
+
 .img-sec {
   display: -webkit-flex;
   display: -ms-flexbox;
