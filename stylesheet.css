@@ -30,7 +30,7 @@ a:hover {
 }
 
 /*-- sections header --*/
-.section-header {
+body > section > header {
   text-align: center;
   font-size: 40px;
   font-weight: 900;
