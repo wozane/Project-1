@@ -1,5 +1,7 @@
 html {     
   box-sizing: border-box; 
+  background: url("images/background.png") no-repeat center center fixed;
+  background-size: cover;
 } 
 
 *, *:before, *:after {     
@@ -10,7 +12,7 @@ body {
   background-color: white;
   font-family: Verdana, Arial, sans-serif;
   margin: auto;
-  width: 100%;
+
 }
 
 ul {
@@ -44,6 +46,10 @@ body > section > header {
   padding-top: 60px;
 }
 
+body > header {
+  margin: auto;
+}
+
 #intro,
 #team,
 #projects,
@@ -51,7 +57,7 @@ body > section > header {
 #community,
 #sum-up {
   margin: auto;
-  max-width: 50%;
+  width: 50%;
 }
 
 /*-- img in sections --*/
@@ -110,6 +116,10 @@ body > section > header {
   text-align: center;
 }
 
+#logo {
+  float: left; 
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -139,8 +149,8 @@ body > section > header {
 
 .intro-text {
   text-align: center;
-  max-width: 50%;
   margin: auto;
+  width: 50%;
 }
 
 /*-- team section --*/
@@ -168,40 +178,53 @@ body > section > header {
 
 #projects ul li {
   display: inline-block;
-  
+  max-width: 33%;
 }
 
-#projects figure > figcaption {
+/*-- open-source section --*/
+#open {
+  color: #373737;
   text-align: center;
-  width: 100%;
-  display: table-caption;
-  caption-side: bottom;
 }
 
-#projects figure > img {
-  margin: 1.25rem;
+#open > header {
+  margin-bottom: 5rem;
 }
 
-/*-- open source section --*/
-.open-logo {
-  display: block;
-  margin: auto;
+#open > ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  display: table;
 }
 
-.open-border {
-  display: -webkit-flex;
-  display: -ms-flex;
-  -webkit-align-items: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+#open > ul > li {
+  border-bottom-width: 0.1rem;
   border-bottom: 2px solid lightgrey;
+  border-color: #8F8F8F;
+  padding: 1rem 1.25rem;
+  display: table;
 }
 
-.open-part {
-  display: block;
-  margin: auto;
-  float: right;
+#open > ul > li > figure {
+  display: inline;
 }
+
+#open > ul > li > figure > img {
+  float: left;
+}
+
+#open > ul > li > figure > figcaption {
+  float: centre;
+}
+
+#open > ul > li > figure > li > img {
+  transform: scale(0.5, 0.5);
+  float: right;
+  position: absolute;
+}
+
 
 /*-- comm section --*/
 .comm-logo {
@@ -244,6 +267,3 @@ body > section > header {
   text-align: center;
   font-size: 75%;
 }
-
-#logo { float: left; }
-
