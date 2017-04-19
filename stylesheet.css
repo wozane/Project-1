@@ -204,27 +204,28 @@ body > header {
   border-bottom: 2px solid lightgrey;
   border-color: #8F8F8F;
   padding: 1rem 1.25rem;
-  display: table;
-}
-
-#open > ul > li > figure {
-  display: inline;
+  display: inline-table;
+  width: auto;
 }
 
 #open > ul > li > figure > img {
   float: left;
+  padding: 10px;
 }
 
 #open > ul > li > figure > figcaption {
-  float: centre;
+  float: center;
+  text-align: left;
+}
+
+#open > ul > li > figure > figcaption > header {
+  font-weight: bold;
 }
 
 #open > ul > li > figure > li > img {
   transform: scale(0.5, 0.5);
   float: right;
-  position: absolute;
 }
-
 
 /*-- comm section --*/
 .comm-logo {
