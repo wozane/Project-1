@@ -81,6 +81,7 @@ body > section > header {
   -webkit-flex: 1 0 0;
   flex: 1 0 0;
   padding: 15px;
+  padding-bottom: 30px;
 }
 
 #intro > section > aside {
