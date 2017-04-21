@@ -76,6 +76,7 @@ body > header > img {
 #intro {
   display: flex;
   margin-top: 2rem;
+  color: white;
  }
 
 #intro > section {
