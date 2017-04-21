@@ -42,7 +42,7 @@ a:hover {
 /*-- sections header --*/
 body > section > header {
   text-align: center;
-  font-size: 40em;
+  font-size: 2em;
   font-weight: 900;
   text-transform: uppercase;
   margin: auto;
@@ -51,7 +51,6 @@ body > section > header {
 
 body > header {
   display: flex;
-  font-size: 13em;
   top: 0;
   position: fixed;
   width: 100%;
