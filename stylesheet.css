@@ -170,12 +170,13 @@ body > header > nav {
   padding: 0;
   list-style-type: none;
   text-align: center;
-  display: table;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
 }
 
 #team ul li {
-  display: inline-block;
-  max-width: 33%;
+  margin: 1rem;
 }
 
 /*-- projects section --*/
@@ -189,7 +190,6 @@ body > header > nav {
 
 #projects ul li {
   display: inline-block;
-  max-width: 33%;
 }
 
 /*-- open-source section --*/
