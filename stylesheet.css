@@ -128,22 +128,22 @@ body > header > img {
 
 
 .contact-box {
-  border-top-left-radius: 15rem;
-  border-top-right-radius: 15rem;
-  border-bottom-right-radius: 15rem;
-  border-bottom-left-radius: 15rem;
-  width: 200rem;
-  height: 25rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  width: 14rem;
+  height: 2rem;
 }
 
 .submit-box {
   background-color: #73e600;
-  border-top-left-radius: 20rem;
-  border-top-right-radius: 20rem;
-  border-bottom-right-radius: 20rem;
-  border-bottom-left-radius: 20rem;
-  width: 200rem;
-  height: 25rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  width: 14rem;
+  height: 2rem;
 }
 
 
