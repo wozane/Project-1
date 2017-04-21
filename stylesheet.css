@@ -57,6 +57,7 @@ body > header {
   width: 100%;
   background-color: white;
   justify-content: center;
+  align-items: center;
 }
 
 body > header > img {
