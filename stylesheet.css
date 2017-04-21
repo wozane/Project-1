@@ -54,10 +54,11 @@ body > section > header {
 body > header {
   display: flex;
   top: 0;
-  width: auto;
+  width: 100%;
   background-color: white;
   justify-content: center;
   align-items: center;
+  position: fixed;
 }
 
 body > header > img {
