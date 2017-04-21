@@ -42,16 +42,16 @@ a:hover {
 /*-- sections header --*/
 body > section > header {
   text-align: center;
-  font-size: 40px;
+  font-size: 40em;
   font-weight: 900;
   text-transform: uppercase;
   margin: auto;
-  padding-top: 60px;
+  padding-top: 60rem;
 }
 
 body > header {
   display: flex;
-  font-size: 13px;
+  font-size: 13em;
   top: 0;
   position: fixed;
   width: 100%;
@@ -83,8 +83,8 @@ body > header > img {
  }
 
 #intro > section {
-  padding: 15px;
-  padding-bottom: 30px;
+  padding: 15rem;
+  padding-bottom: 30rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -129,22 +129,22 @@ body > header > img {
 
 
 .contact-box {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-  width: 200px; 
-  height: 25px;
+  border-top-left-radius: 15rem;
+  border-top-right-radius: 15rem;
+  border-bottom-right-radius: 15rem;
+  border-bottom-left-radius: 15rem;
+  width: 200rem;
+  height: 25rem;
 }
 
 .submit-box {
   background-color: #73e600;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  width: 200px; 
-  height: 25px;
+  border-top-left-radius: 20rem;
+  border-top-right-radius: 20rem;
+  border-bottom-right-radius: 20rem;
+  border-bottom-left-radius: 20rem;
+  width: 200rem;
+  height: 25rem;
 }
 
 
@@ -152,7 +152,7 @@ body > header > img {
   text-align: center;
   margin: auto;
   width: 50%;
-  padding-top: 10px;
+  padding-top: 10rem;
 }
 
 /*-- team section --*/
@@ -203,7 +203,7 @@ body > header > img {
 
 #open > ul > li {
   border-bottom-width: 0.1rem;
-  border-bottom: 2px solid lightgrey;
+  border-bottom: 2rem solid lightgrey;
   border-color: #8F8F8F;
   padding: 1rem 1.25rem;
   display: inline-table;
@@ -212,7 +212,7 @@ body > header > img {
 
 #open > ul > li > figure > img {
   float: left;
-  padding: 10px;
+  padding: 10rem;
 }
 
 #open > ul > li > figure > figcaption {
@@ -243,12 +243,12 @@ body > header > img {
 }
 
 .sum-contact{
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  width: 150px; 
-  height: 25px;
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+  width: 150rem;
+  height: 25rem;
 }
 
 .sum-main-box {
