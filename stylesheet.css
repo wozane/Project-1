@@ -9,7 +9,7 @@ body {
   font-family: Verdana, Arial, sans-serif;
   margin: auto;
   box-sizing: border-box;
-  background: url("images/background.png") no-repeat center center fixed;
+  background: url("images/background.png") no-repeat center fixed;
   background-size: cover;
 }
 
@@ -46,7 +46,7 @@ body > section > header {
   font-weight: 900;
   text-transform: uppercase;
   margin: auto;
-  padding-top: 60rem;
+  padding-top: 6rem;
 }
 
 body > header {
@@ -74,16 +74,13 @@ body > header > img {
 
 /*-- intro seciton --*/
 #intro {
-  display: -ms-flexbox;
   display: flex;
-  display: -ms-flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
+  margin-top: 2rem;
  }
 
 #intro > section {
-  padding: 15rem;
-  padding-bottom: 30rem;
+  padding: 1rem;
+  padding-bottom: 2rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -151,7 +148,7 @@ body > header > img {
   text-align: center;
   margin: auto;
   width: 50%;
-  padding-top: 10rem;
+  padding-top: 2rem;
 }
 
 /*-- team section --*/
