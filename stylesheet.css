@@ -82,21 +82,15 @@ body > header > img {
 #intro > section {
   padding: 1rem;
   padding-bottom: 2rem;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
+  flex-direction: column;
 }
 
 #intro > header {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-positive: 2;
-      flex-grow: 2;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-grow: 2;
   align-items: flex-start;
 }
 
@@ -106,15 +100,11 @@ body > header > img {
 }
 
 #intro > section  {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
-  -ms-flex-direction: column;
-      flex-direction: column;
+  justify-content: flex-end;
+  flex-direction: column;
   text-align: left;
-  -ms-flex-positive: 1;
-      flex-grow: 1;
+  flex-grow: 1;
   align-items: stretch;
   word-wrap: break-word;
 }
