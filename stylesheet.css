@@ -76,7 +76,8 @@ body > header > nav {
 #projects,
 #open,
 #community,
-#sum-up_page {
+#sum-up_page,
+#sum-up_contact {
   margin: auto;
   width: 52rem;
 }
@@ -140,6 +141,7 @@ body > header > nav {
   border-bottom-left-radius: 1rem;
   width: 14rem;
   height: 2rem;
+  padding: 0.5rem;
 }
 
 .submit-box {
@@ -300,36 +302,67 @@ body > header > nav {
   font-style: normal;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  line-height: 1.5rem;
 }
 #sum-up_page > section > section {
   align-self: center;
 }
 
-.sum-contact{
-  border-top-left-radius: 5rem;
-  border-top-right-radius: 5rem;
-  border-bottom-right-radius: 5rem;
-  border-bottom-left-radius: 5rem;
-  width: 14rem;
-  height: 2rem;
+
+#sum-up_contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.sum-main-box {
-  align-items: center;
-  justify-content: center;
+#sum-up_contact > p {
+  padding: 0.5rem;
+  line-height: 1.5rem;
+}
+
+#sum-up_contact > form > input {
+  margin-bottom: 0.5rem;
+}
+#sum-up_contact > footer {
+  width: 45rem;
+  padding: 1rem;
+  font-size: 0.75em;
+}
+
+.sum-contact{
+  width: 22rem;
+  height: 2rem;
+  padding: 0.5rem;
+}
+
+.sum-up-submitbox {
+  background-color: #73e600;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  width: 7rem;
+  height: 2rem;
   text-align: center;
+  margin: auto;
+  display: block;
 }
 
 .sum_up-slogan {
   color: #73e600;
   font-size: 1em;
   font-weight: normal;
+  padding: 1rem;
 }
 
 /*-- footer --*/
-.footer {
+body > footer {
   background-color: blue;
   color: white;
   text-align: center;
   font-size: 0.75em;
+  padding-top: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 100;
 }
