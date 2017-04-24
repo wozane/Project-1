@@ -79,6 +79,7 @@ body > header > nav {
 #sum-up_page,
 #sum-up_contact {
   padding: 0 calc((100% - 52rem)/2);
+  width: 100%;
 }
 
 /*-- intro seciton --*/
@@ -249,6 +250,7 @@ body > header > nav {
 
 #open > ul > li > figure > figcaption {
   text-align: left;
+  align-self: center;
   }
 
 #open > ul > li > figure > figcaption > header {
