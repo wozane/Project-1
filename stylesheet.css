@@ -76,7 +76,7 @@ body > header > nav {
 #projects,
 #open,
 #community,
-#sum-up {
+#sum-up_page {
   margin: auto;
   width: 52rem;
 }
@@ -289,9 +289,20 @@ body > header > nav {
   font-size: 1.4rem;
 }
 
-/*-- sum up page --*/
-.address {
+/*-- sum-up page --*/
+#sum-up_page > section {
+  display: flex;
+  justify-content: space-between;
+}
+
+#sum-up_page > section > section > address{
+  align-self: center;
   font-style: normal;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+#sum-up_page > section > section {
+  align-self: center;
 }
 
 .sum-contact{
