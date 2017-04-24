@@ -179,6 +179,10 @@ body > header > nav > ul > li {
   margin: 1rem;
 }
 
+#team > ul > li > figure > img {
+  width: 14.5rem;
+}
+
 /*-- projects section --*/
 #projects ul {
   display: flex;
