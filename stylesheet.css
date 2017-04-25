@@ -57,13 +57,14 @@ body > header {
   width: 100%;
   background-color: white;
   margin: auto;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 body > header > img {
   max-width: 10rem;
   max-height: 4rem;
   align-self: center;
+  justify-content: flex-start;
 }
 
 body > header > nav {
@@ -76,11 +77,15 @@ body > header > nav > ul {
 }
 
 body > header > nav > ul > li {
-  padding: 0.5rem;
   margin: 0;
   line-height: 5rem;
   flex-grow: 1;
   text-align: center;
+}
+
+body > header > nav > ul > li > a {
+  display: block;
+  padding: 0.5rem;
 }
 
 #intro,
