@@ -43,8 +43,8 @@ a:hover {
 /*-- section's header --*/
 body > section > header {
   text-align: center;
-  font-size: 2em;
-  font-weight: 400;
+  font-size: 3rem;
+  font-weight: bold;
   text-transform: uppercase;
   margin: auto;
   padding-top: 1.5rem;
@@ -58,6 +58,8 @@ body > header {
   background-color: white;
   margin: auto;
   justify-content: space-between;
+  height: 5rem;
+  align-items: center;
 }
 
 body > header > img {
@@ -78,7 +80,7 @@ body > header > nav > ul {
 
 body > header > nav > ul > li {
   margin: 0;
-  line-height: 5rem;
+  line-height: 4rem;
   flex-grow: 1;
   text-align: center;
 }
@@ -102,10 +104,10 @@ body > header > nav > ul > li > a {
 /*-- intro section --*/
 #intro {
   display: flex;
-  margin-top: 2rem;
   color: white;
   padding-bottom: 4rem;
   flex-direction: row;
+  padding-top: 3rem;
  }
 
 #intro > section {
@@ -116,18 +118,25 @@ body > header > nav > ul > li > a {
   align-items: stretch;
   word-wrap: break-word;
   padding: 0.5rem;
+  flex-basis: 16rem;
+}
+
+#intro section > header {
+  padding-top: 1rem;
 }
 
 #intro > header > h1 {
-  font-weight: bolder;
-  font-size: 2em;
+  font-size: 3.5rem;
   padding-bottom: 0.75rem;
   text-align: left;
+  font-weight: 700;
 }
 
 #intro > header > p {
   text-transform: none;
   text-align: left;
+  font-weight: normal;
+  font-size: 2rem;
 }
 
 #intro > section > h2 {
@@ -142,20 +151,34 @@ body > header > nav > ul > li > a {
 }
 
 #intro > section > aside {
-  text-align: right;
+  text-align: left;
   font-size: 0.6em;
+  padding-left: 0.5rem;
+  color: black;
 }
 
 #intro > section > form > input,
 #sum-up_contact > form > input {
-  border-radius: 1rem;
+  border-radius: 0.5rem;
+  border: 0.01rem solid white;
+  margin: 0.5rem;
+  padding: 0.5rem;
   width: 14rem;
   height: 2rem;
-  padding: 0.5rem;
+  font-size: 1em;
+  font-weight: 100;
 }
 
+.intro-line {
+  border: 1px solid white;
+  width: 2rem;
+  height: 0.1rem;
+  margin-top: 0.5rem;
+}
 .submit-box {
   background-color: #73e600;
+  color: white;
+  border-radius: 1rem;
 }
 
 .intro-contact-email {
@@ -168,6 +191,9 @@ body > header > nav > ul > li > a {
   margin: auto;
   width: 52rem;
   padding-top: 2rem;
+  line-height: 2.5rem;
+  font-weight: 100;
+  font-size: 1.2rem
 }
 
 /*-- team section --*/
