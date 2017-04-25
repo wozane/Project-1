@@ -444,7 +444,8 @@ body > footer {
   color: white;
   text-align: center;
   font-size: 0.75em;
-  padding-top: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   line-height: 1.5rem;
   font-weight: 100;
 }
