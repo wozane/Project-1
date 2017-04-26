@@ -214,7 +214,8 @@ body > header > nav > ul > li > a {
 }
 
 #team ul li {
-  margin: 1rem;
+  margin: 1.25rem;
+  z-index: -1;
 }
 
 #team > ul > li > figure > img {
