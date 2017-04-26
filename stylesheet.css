@@ -61,6 +61,7 @@ body > header {
   height: 5rem;
   align-items: center;
   position: fixed;
+  font-family: 'Roboto';
 }
 
 body > header > img {
@@ -153,7 +154,7 @@ body > header > nav > ul > li > a {
 
 #intro > section > aside {
   text-align: left;
-  font-size: 0.6em;
+  font-size: 0.8em;
   padding-left: 0.5rem;
   color: black;
 }
@@ -193,8 +194,9 @@ body > header > nav > ul > li > a {
   width: 52rem;
   padding-top: 2rem;
   line-height: 2.5rem;
+  font-family: 'Roboto', sans-serif;
   font-weight: 100;
-  font-size: 1.2rem
+  font-size: 1.2rem;
   padding-bottom: 2rem;
 }
 
@@ -263,6 +265,9 @@ body > header > nav > ul > li > a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  font-family: 'Roboto';
+  font-weight: 100;
+  line-height: 150%;
 }
 
 #projects ul li {
@@ -325,10 +330,13 @@ body > header > nav > ul > li > a {
 #open > ul > li > figure > figcaption {
   text-align: left;
   align-self: center;
+  font-size: 1.2rem;
   }
 
 #open > ul > li > figure > figcaption > header {
   font-weight: bold;
+  font-size: 1.7rem;
+  padding-bottom: 1rem;
 }
 
 #open > ul > li > section {
@@ -361,16 +369,22 @@ body > header > nav > ul > li > a {
   padding: 2rem;
 }
 
+#community > ul > li > figure > figcaption {
+  margin: 1rem 0;
+}
+
 #community > ul > li > figure > figcaption > header {
-  font-weight: bold ;
+  font-weight: 400;
   padding-bottom: 1rem;
-  font-size: 1.4rem;
+  font-size: 2rem;
+  margin: 1rem 0;
 }
 
 #community p,
 #open p {
   font-weight: 100;
   line-height: 160%;
+  margin: 0;
 }
 
 /*-- sum-up page --*/
@@ -381,6 +395,8 @@ body > header > nav > ul > li > a {
 
 #sum-up_page > section > section > address{
   align-self: center;
+  font-family: 'Roboto';
+  font-weight: 100;
   font-style: normal;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -390,6 +406,10 @@ body > header > nav > ul > li > a {
   align-self: center;
 }
 
+#sum-up_page p {
+  font-family: 'Roboto';
+  font-weight: 100;
+}
 
 #sum-up_contact {
   display: flex;
@@ -410,9 +430,11 @@ body > header > nav > ul > li > a {
 }
 
 #sum-up_contact > footer {
-  width: 45rem;
-  padding: 1rem;
-  font-size: 0.75em;
+  max-width: 34rem;
+  font-size: 0.9em;
+  margin: auto;
+  padding: 1.5rem 0 0;
+  margin-bottom: 3rem;
 }
 
 .sum-contact{
@@ -433,9 +455,9 @@ body > header > nav > ul > li > a {
 
 .sum_up-slogan {
   color: #73e600;
-  font-size: 1.5rem;
-  font-weight: normal;
-  padding: 1rem;
+  font-size: 1.3rem;
+  margin: 1.5rem 0;
+  line-height: 1.25rem;
 }
 
 /*-- footer --*/
@@ -443,8 +465,9 @@ body > footer {
   background-color: blue;
   color: white;
   text-align: center;
-  font-size: 0.75em;
-  padding-top: 1rem;
+  font-family: 'Roboto';
+  font-size: 0.8em;
+  padding-top: 2rem;
   padding-bottom: 1rem;
   line-height: 1.5rem;
   font-weight: 100;
