@@ -159,28 +159,31 @@ body > header > nav > ul > li > a {
   color: black;
 }
 
-#intro > section > form > input,
-#sum-up_contact > form > input {
-  border-radius: 0.5rem;
-  border: 0.01rem solid white;
-  margin: 0.5rem;
-  padding: 0.5rem;
-  width: 14rem;
-  height: 2rem;
-  font-size: 1em;
-  font-weight: 100;
-}
-
 .intro-line {
   border: 1px solid white;
   width: 2rem;
   height: 0.1rem;
   margin-top: 0.5rem;
 }
-.submit-box {
-  background-color: #73e600;
+
+#intro > section > form > input,
+#sum-up_contact > form > input {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  width: 14rem;
+  height: 2rem;
+  font-size: 1em;
+  font-weight: 100;
+  margin: 0.4rem 0;
+  border: 0.01rem solid white;
+}
+
+#intro input.submit-box {
+  background-color: #00ea84;
+  border: none;
+  border-radius: 2rem;
   color: white;
-  border-radius: 1rem;
+  font-weight: bold;
 }
 
 .intro-contact-email {
