@@ -249,6 +249,15 @@ body > header > nav > ul > li > a {
   height: 100%
 }
 
+#team p {
+  font-family: 'Roboto';
+  font-weight: 100;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  position: relative;
+  order: -1;
+}
+
 .overlay {
   position: absolute;
   bottom: 0;
