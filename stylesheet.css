@@ -488,3 +488,17 @@ body > footer {
   line-height: 1.5rem;
   font-weight: 100;
 }
+
+@media (min-width: 992px) {
+  body {
+    background: url('images/header-tablet.png') no-repeat;
+    background-size: contain;
+    background-position: 0 5rem;
+  }
+
+  body > header {
+    display: flex;
+    padding: 0 calc((100vw - 52rem)/2);
+    width: 52rem;
+  }
+}
