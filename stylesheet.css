@@ -644,4 +644,8 @@ body > footer {
     padding-left: 0;
   }
 
+  #community p {
+    font-size: 1.2rem;
+    padding-right: 2rem;
+  }
 }
