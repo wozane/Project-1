@@ -505,6 +505,12 @@ body > footer {
     width: 100%;
   }
 
+  body > footer{
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
   #intro,
   #team,
   #projects,
@@ -643,5 +649,14 @@ body > footer {
     padding-right: 2rem;
   }
 
-  #sum_
+  #sum_up_page section {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #sum_up_page section > section {
+    padding-top: 2rem;
+  }
 }
