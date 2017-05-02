@@ -160,7 +160,7 @@ body > header > nav > ul > li > a {
   color: black;
 }
 
-.intro-line {
+.intro_line {
   border: 1px solid white;
   width: 2rem;
   height: 0.1rem;
@@ -187,12 +187,12 @@ body > header > nav > ul > li > a {
   font-weight: bold;
 }
 
-.intro-contact-email {
+.intro_contact_email {
   text-align: right;
   padding-bottom: 1rem;
 }
 
-.intro-text {
+.intro_text {
   text-align: center;
   margin: auto;
   width: 52rem;
@@ -463,7 +463,7 @@ padding: 1rem;
   font-weight: bold;
 }
 
-.sum_up-slogan {
+.sum_up_slogan {
   color: #73e600;
   font-size: 1.3rem;
   margin: 1.5rem 0;
@@ -803,6 +803,7 @@ body > footer {
   #intro {
     display: block;
     padding-top: 2rem;
+    height: auto;
   }
 
   #intro > section {
@@ -831,23 +832,24 @@ body > footer {
     margin: 1rem 0;
   }
 
-  .intro-contact-email {
+  .intro_contact_email {
     font-size: 1.5rem;
     color: black;
   }
 
   #intro > section > aside {
-    font-size: 1.2rem;
+    font-size: 2rem;
     padding-top: 0.5rem;
+    color: black;
   }
 
-  .intro-text {
+  .intro_text {
     width: 40rem;
     padding-top: 2rem;
     line-height: 5rem;
     font-weight: 100;
     letter-spacing: 0.01rem;
-    font-size: 3rem;
+    font-size: 2.2rem;
     margin: auto;
   }
 
@@ -925,7 +927,7 @@ body > footer {
   }
 
   #community p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 2;
     margin: 4rem;
   }
@@ -954,17 +956,21 @@ body > footer {
     line-height: 2;
   }
 
-  #sum_up_contact > p {
+  #sum_up_contact .sum_up_slogan {
     font-size: 3rem;
     line-height: 4rem;
   }
 
   #sum_up_contact > form > input {
     width: 100%;
-    height: 3rem;
+    height: 4rem;
     font-weight: 700;
   }
 
+  #sum_up_contact > p {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
   #sum_up_contact input.sum-up-submitbox {
     width: 100%;
   }
