@@ -402,7 +402,12 @@ padding: 1rem;
 /*-- sum-up page --*/
 #sum_up_page > section {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin: 0 25rem;
+}
+
+#sum_up_page > section > figure {
+  padding-right: 2rem;
 }
 
 #sum_up_page > section > section > address{
@@ -483,7 +488,7 @@ body > footer {
   font-weight: 100;
 }
 
-@media (min-width: 992px) {
+@media only screen and (min-width: @screen-md-min) {
   body {
     background: url('images/header-tablet.png') no-repeat;
     background-size: contain;
@@ -520,10 +525,6 @@ body > footer {
   #sum_up_contact {
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-
-  #intro {
-    height: 100vh;
   }
 
   #intro > header {
@@ -674,7 +675,7 @@ body > footer {
   }
 }
 
-@media (min-width: 786px) {
+@media only screen and (max-width: @screen-sm-max) {
     body {
     background: url('images/header-tablet.png') no-repeat;
     background-size: contain;
@@ -706,6 +707,10 @@ body > footer {
   #sum-up_page,
   #sum_up_contact {
     padding: 0 2rem;
+  }
+
+  #intro {
+    flex-direction: column;
   }
 
   #intro > section {
@@ -780,14 +785,21 @@ body > footer {
   }
 } 
 
-@media (min-width: 320px) {
+@media only screen and (max-width: 320px) {
+  body {
+    background: url("images/header-jobs-mobile.png") no-repeat;
+    background-size: 100%;
+    background-attachment: center top;
+    width: 100%;
+  }
+
   body > section > header {
     text-align: center;
     font-size: 6rem;
     font-weight: bold;
     text-transform: uppercase;
     margin: auto;
-    padding-top: 5rem;
+    padding-top: 3rem;
   }
 
   #intro,
@@ -798,12 +810,14 @@ body > footer {
   #sum-up_page,
   #sum_up_contact {
     padding: 0 2rem;
+    margin: 0 2rem;
   }
 
   #intro {
     display: block;
-    padding-top: 2rem;
     height: auto;
+    display: flex;
+    flex-direction: column;
   }
 
   #intro > section {
@@ -851,6 +865,11 @@ body > footer {
     letter-spacing: 0.01rem;
     font-size: 2.2rem;
     margin: auto;
+  }
+
+  #team > ul {
+    display: flex;
+    flex-direction: column;
   }
 
   #team > ul > li > figure > img {
