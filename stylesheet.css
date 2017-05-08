@@ -291,3 +291,34 @@ body > section > header {
   width: 6rem;
   height: 6rem;
 }
+
+/* community section */
+#community li {
+  padding: 1.5rem 0;
+}
+
+#community figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#community figcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#community figcaption > header {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 300
+}
+
+#community figcaption > p {
+  font-size: 0.9rem;
+  font-weight: 100;
+  line-height: 1.6;
+  text-align: center;
+}
