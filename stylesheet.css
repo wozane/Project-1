@@ -5,14 +5,13 @@
 }
 
 body {
-  background-color: white;
-  font-family: 'Montserrat', sans-serif;
-  margin: auto;
-  box-sizing: border-box;
-  background: url("images/background.png") no-repeat;
-  background-size: 100% 15%;
-  background-attachment: center top;
+  font-size: 16px;
   width: 100%;
+  margin: auto;
+  background-position: 0 5rem;
+  font-family: 'Montserrat', sans-serif;
+  background: url("images/header.png") no-repeat;
+  box-sizing: border-box;
 }
 
 ul {
@@ -70,6 +69,7 @@ body > header > img {
   max-height: 4rem;
   align-self: center;
   justify-content: flex-start;
+  padding-left: 1rem;
 }
 
 body > header > nav {
@@ -78,19 +78,7 @@ body > header > nav {
 }
 
 body > header > nav > ul {
-  display: flex;
-}
-
-body > header > nav > ul > li {
-  margin: 0;
-  line-height: 4rem;
-  flex-grow: 1;
-  text-align: center;
-}
-
-body > header > nav > ul > li > a {
-  display: block;
-  padding: 0.5rem;
+  display: none;
 }
 
 #intro,
@@ -488,7 +476,8 @@ body > footer {
   font-weight: 100;
 }
 
-@media only screen and (min-width: @screen-md-min) {
+/* medium devices (desktops, 992px and up)*/
+@media (min-width: @screen-md-min) {
   body {
     background: url('images/header-tablet.png') no-repeat;
     background-size: contain;
@@ -675,7 +664,8 @@ body > footer {
   }
 }
 
-@media only screen and (max-width: @screen-sm-max) {
+/* small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
     body {
     background: url('images/header-tablet.png') no-repeat;
     background-size: contain;
@@ -785,7 +775,8 @@ body > footer {
   }
 } 
 
-@media only screen and (max-width: 320px) {
+/* medium devices (desktops, 992px and up)*/
+@media (min-width: @screen-md-min) {
   body {
     background: url("images/header-jobs-mobile.png") no-repeat;
     background-size: 100%;
@@ -998,3 +989,5 @@ body > footer {
     font-size: 1.2rem;
   }
 }
+
+/* large devices (large desktops, 1200px and up)*/
