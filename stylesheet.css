@@ -4,16 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-size: 16px;
-  width: 100%;
-  margin: auto;
-  background-position: 0 5rem;
-  font-family: 'Montserrat', sans-serif;
-  background: url("images/header.png") no-repeat;
-  box-sizing: border-box;
-}
-
 ul {
   list-style-type: none;
 }
@@ -21,7 +11,6 @@ ul {
 li {
   text-decoration: none;
 }
-
 /*-- link --*/
 a {
   text-decoration: none;
@@ -39,135 +28,92 @@ a:hover {
   color: white;
 }
 
-/*-- section's header --*/
-body > section > header {
-  text-align: center;
-  font-size: 3rem;
-  font-weight: bold;
-  text-transform: uppercase;
+/*body*/
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  width: 100%;
   margin: auto;
-  padding-top: 5rem;
+  background-position: 0 5rem;
+  background: url("images/header.png") no-repeat;
+  box-sizing: border-box;
+  line-height: 1;
 }
 
-/*-- header section --*/
+body section {
+  padding: 0 1.25rem;
+}
+
 body > header {
-  display: flex;
   padding: 0 calc((100vw - 52rem)/2);
   width: 100%;
   background-color: white;
   margin: auto;
-  justify-content: space-between;
-  height: 5rem;
-  align-items: center;
+  height: 10vh;
   position: fixed;
-  font-family: 'Roboto';
-  z-index: 1;
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat";
 }
 
 body > header > img {
-  max-width: 10rem;
-  max-height: 4rem;
-  align-self: center;
-  justify-content: flex-start;
   padding-left: 1rem;
-}
-
-body > header > nav {
-  display: flex;
-  justify-content: space-around;
 }
 
 body > header > nav > ul {
   display: none;
 }
 
-#intro,
-#team,
-#projects,
-#open,
-#community,
-#sum-up_page,
-#sum_up_contact {
-  padding: 0 calc((100% - 52rem)/2);
-  width: 100%;
-}
-
-/*-- intro section --*/
+/* section intro*/
 #intro {
   display: flex;
+  flex-flow: column wrap;
+  padding-top: 7rem;
   color: white;
-  padding-bottom: 4rem;
-  flex-direction: row;
-  padding-top: 6rem;
- }
-
-#intro > section {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  text-align: left;
-  align-items: stretch;
-  word-wrap: break-word;
-  padding: 0.5rem;
-  flex-basis: 16rem;
+  font-family: "Montserrat";
+  padding-bottom: 3rem;
 }
 
-#intro section > header {
-  padding-top: 1rem;
-}
-
-#intro > header > h1 {
-  font-size: 3.5rem;
-  padding-bottom: 0.75rem;
-  text-align: left;
-  font-weight: 700;
+#intro h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 3rem;
+  font-weight: 400;
 }
 
 #intro > header > p {
-  text-transform: none;
-  text-align: left;
-  font-weight: normal;
-  font-size: 2rem;
+  font-size: 1.1rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 
-#intro > section > h2 {
+#intro > section {
+  padding: 0 0;
+}
+
+#intro h2 {
+  font-size: 1.5rem;
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: 100;
+  padding-bottom: 2rem;
 }
 
-#intro > section > p {
-  padding-top: 0.5rem;
-  font-size: 0.9em;
-  padding-bottom: 0.5rem;
+#intro .p_linehight {
+  line-height: 1.5rem;
 }
 
-#intro > section > aside {
-  text-align: left;
-  font-size: 0.8em;
-  padding-left: 0.5rem;
-  color: black;
-}
-
-.intro_line {
-  border: 1px solid white;
-  width: 2rem;
-  height: 0.1rem;
-  margin-top: 0.5rem;
-}
-
-#intro > section > form > input,
-#sum_up_contact > form > input {
-  border-radius: 0.5rem;
-  padding: 0.5rem;
-  width: 14rem;
-  height: 2rem;
-  font-size: 1em;
+#intro input {
+  border: 0.01rem solid #fff;
+  border-radius: 0.25rem;
+  font-size: 1rem;
   font-weight: 100;
   margin: 0.4rem 0;
-  border: 0.01rem solid white;
+  width: 100%;
+  padding: 0.4rem;
+  font-family: 'Roboto';
 }
 
-#intro input.submit-box {
+#intro .submit-box {
   background-color: #00ea84;
   border: none;
   border-radius: 2rem;
@@ -178,816 +124,14 @@ body > header > nav > ul {
 .intro_contact_email {
   text-align: right;
   padding-bottom: 1rem;
+  color: black;
 }
 
-.intro_text {
-  text-align: center;
-  margin: auto;
-  width: 52rem;
-  padding-top: 2rem;
-  line-height: 2.5rem;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  font-size: 1.2rem;
-  padding-bottom: 2rem;
-}
-
-/*-- team section --*/
-#team ul {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#team ul li {
-  margin: 1.25rem;
-}
-
-#team > ul > li > figure > img {
-  width: 14.5rem;
-}
-
-#team figure {
-  position: relative;
-  cursor: pointer;
-  margin: 0;
-}
-
-#team figcaption {
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  font-weight: 100;
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-flow: wrap;
-}
-
-#team h3 {
-  font-weight: bold;
-  font-size: 3rem;
-}
-
-#team figure:hover .overlay {
-  height: 100%
-}
-
-#team p {
-  font-family: 'Roboto';
-  font-weight: 100;
-  font-size: 0.8rem;
-  line-height: 1rem;
-  position: relative;
-  order: -1;
-}
-
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(25,79,214,0.9);
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: .5s ease;
-}
-
-
-/*-- projects section --*/
-#projects ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Roboto';
-  font-weight: 100;
-  line-height: 150%;
-}
-
-#projects ul li {
-  align-self: flex-end;
-  padding: 1rem;
-  width: 13rem;
-  height: 14rem;
-  margin: 2rem;
-}
-
-#projects ul li figure {
-  display: table;
-  padding-bottom: 1rem;
-}
-
-#projects ul li figure img {
-  width: 12.25rem;
-  height: 10rem;
-}
-
-#projects ul li figure figcaption {
-  text-align: center;
-  width: 100%;
-  display: table-caption;
-  caption-side: bottom;
-  font-size: 0.9em;
-}
-
-/*-- open-source section --*/
-#open {
-  color: #373737;
-  text-align: center;
-}
-
-#open > ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  font-family: 'Roboto', sans-serif;
-}
-
-#open > ul > li {
-  border-bottom-width: medium;
-  border-bottom: 0.1rem solid lightgrey;
-  border-color: #8F8F8F;
-  padding: 1rem 1.25rem;
-  display: flex;
-  flex-direction: row;
-}
-#open > ul > li > figure {
-  display: flex;
-}
-
-#open > ul > li > figure > img {
-  float: left;
-padding: 1rem;
-}
-
-#open > ul > li > figure > figcaption {
-  text-align: left;
-  align-self: center;
-  font-size: 1.2rem;
-  }
-
-#open > ul > li > figure > figcaption > header {
-  font-weight: bold;
-  font-size: 1.7rem;
-  padding-bottom: 1rem;
-}
-
-#open > ul > li > section {
-  float: right;
-  display: flex;
-  flex-direction: row;
-  padding-left: 2rem;
-}
-
-#open > ul > li > section > img {
-  width: 6rem;
-  height: 6rem;
-  padding: 0.25rem;
-}
-
-/*-- community section --*/
-#community > ul {
-  display: flex;
-  flex-flow: row wrap;
-  font-family: 'Roboto', sans-serif;
-}
-
-#community > ul > li > figure {
-  display: flex;
-  align-items: center;
-  padding-bottom: 2rem;
-}
-
-#community > ul > li > figure > img {
-  padding: 2rem;
-}
-
-#community > ul > li > figure > figcaption {
-  margin: 1rem 0;
-}
-
-#community > ul > li > figure > figcaption > header {
-  font-weight: 400;
-  padding-bottom: 1rem;
-  font-size: 2rem;
-  margin: 1rem 0;
-}
-
-#community p,
-#open p {
-  font-weight: 100;
-  line-height: 160%;
-  margin: 0;
-}
-
-/*-- sum-up page --*/
-#sum_up_page > section {
-  display: flex;
-  justify-content: space-around;
-  margin: 0 25rem;
-}
-
-#sum_up_page > section > figure {
-  padding-right: 2rem;
-}
-
-#sum_up_page > section > section > address{
-  align-self: center;
-  font-family: 'Roboto';
-  font-weight: 100;
-  font-style: normal;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  line-height: 1.5rem;
-}
-#sum_up_page > section > section {
-  align-self: center;
-}
-
-#sum_up_page p {
-  font-family: 'Roboto';
+#intro aside {
+  color: black;
+  font-size: 0.9rem;
+  font-family: "Roboto";
+  padding: 1.7rem 0 0;
+  line-height: 1.5;
   font-weight: 100;
 }
-
-#sum_up_contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#sum_up_contact > p {
-  padding: 0.5rem;
-  line-height: 1.5rem;
-  text-align: center;
-}
-
-#sum_up_contact > form > input {
-  margin-bottom: 0.5rem;
-  border: 0.01rem solid #DADADA;
-  width: 20rem;
-  margin: 1.5rem 0.5rem;
-}
-
-#sum_up_contact > footer {
-  max-width: 34rem;
-  font-size: 0.9em;
-  margin: auto;
-  padding: 1.5rem 0 0;
-  margin-bottom: 3rem;
-}
-
-#sum_up_contact input.sum-up-submitbox {
-  background-color: #73e600;
-  display: block;
-  border: none;
-  margin: auto;
-  width: 6rem;
-  height: 2.5rem;
-  border-radius: 2rem;
-  color: white;
-  font-weight: bold;
-}
-
-.sum_up_slogan {
-  color: #73e600;
-  font-size: 1.3rem;
-  margin: 1.5rem 0;
-  line-height: 1.25rem;
-}
-
-/*-- footer --*/
-body > footer {
-  background-color: blue;
-  color: white;
-  text-align: center;
-  font-family: 'Roboto';
-  font-size: 0.8em;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-  line-height: 1.5rem;
-  font-weight: 100;
-}
-
-/* medium devices (desktops, 992px and up)*/
-@media (min-width: @screen-md-min) {
-  body {
-    background: url('images/header-tablet.png') no-repeat;
-    background-size: contain;
-    background-position: 0 -1rem;
-  }
-
-  body > header {
-    display: flex;
-    padding: 1rem;
-    width: 100%;
-    position: fixed;
-  }
-
-  body > header > nav > ul {
-    display: none;
-  }
-
-  body > header > nav > ul > li {
-    width: 100%;
-  }
-
-  body > footer{
-    font-size: 1.2rem;
-    text-align: center;
-    padding-bottom: 2rem;
-  }
-
-  #intro,
-  #team,
-  #projects,
-  #open,
-  #community,
-  #sum-up_page,
-  #sum_up_contact {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  #intro > header {
-    padding-top: 0;
-  }
-
-  #intro > header > h1 {
-    font-size: 4.5rem;
-  }
-
-  #intro > header > p {
-    font-size: 3rem;
-  }
-
-  #intro > section {
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    padding-left: 2rem;
-    flex-basis: 40rem;
-  }
-
-  #intro > section > h2 {
-    font-size: 2rem;
-    margin-top: 3rem;
-  }
-
-  #intro > section > p {
-    font-size: 1.2rem;
-
-  }
-
-  #intro > section > form > input {
-    width: 100%;
-    height: 2.5rem;
-    margin: 0.8rem 0;
-    font-size: 1rem;
-    font-weight: 100;
-  }
-
-  #intro > section > aside {
-    margin: 2rem 0;
-    color: white;
-    font-size: 1rem;
-  }
-
-  #team > ul > li > figure > img {
-    width: 25rem;
-  }
-
-  #team > ul > li > figure > figcaption > p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
-  #team > ul > li > figure > figcaption > footer {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-  }
-
-  #projects > ul {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  #projects > ul > li {
-    width: 20rem;
-    height: auto;
-  }
-
-  #projects > ul > li > figure > img {
-    width: 20rem;
-    height: 18rem;
-  }
-
-  #projects > ul > li > figure > figcaption {
-    font-size: 1.5rem;
-    line-height: 1.3;
-  }
-
-  #open > ul {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #open > ul > li {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    border: none;
-  }
-
-  #open > ul > li > figure {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    margin: 0 8rem;
-  }
-
-  #open > ul > li > figure > img {
-    width: 10rem;
-    margin: auto;
-  }
-
-  #open > ul > li > figure > figcaption {
-    text-align: center;
-  }
-
-  #open > ul > li > section {
-    padding-top: 1rem;
-    justify-content: center;
-    padding-left: 0;
-  }
-
-  #community p {
-    font-size: 1.2rem;
-    padding-right: 2rem;
-  }
-
-  #sum_up_page section {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .section {
-    overflow: auto;
-    width: 100%;
-  }
-
-  .seciton img {
-    width: calc(50% - 10px);
-    padding: 5rem;
-    float: left;
-  }
-
-  .section p, address {
-    float: right;
-    display: block;
-    width: 50%;
-  }
-}
-
-/* small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) {
-    body {
-    background: url('images/header-tablet.png') no-repeat;
-    background-size: contain;
-    background-position: 0 -1rem;
-  }
-
-  body > header {
-    display: flex;
-    padding: 1rem;
-    width: 100%;
-    position: fixed;
-  }
-
-  body > header > nav > ul {
-    display: none;
-  }
-
-  body > footer{
-    font-size: 1.2rem;
-    text-align: center;
-    padding-bottom: 2rem;
-  }
-
-  #intro,
-  #team,
-  #projects,
-  #open,
-  #community,
-  #sum-up_page,
-  #sum_up_contact {
-    padding: 0 2rem;
-  }
-
-  #intro {
-    flex-direction: column;
-  }
-
-  #intro > section {
-    padding-top: 8rem;
-  }
-
-  #open > ul {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #open > ul > li {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    border: none;
-  }
-
-  #open > ul > li > figure {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    margin: 0 8rem;
-  }
-
-  #open > ul > li > figure > img {
-    width: 10rem;
-    margin: auto;
-  }
-
-  #open > ul > li > figure > figcaption {
-    text-align: center;
-  }
-
-  #open > ul > li > section {
-    padding-top: 1rem;
-    justify-content: center;
-    padding-left: 0;
-  }
-
-  #sum_up_page section {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #sum_up_page section > figure {
-    align-self: center;
-  }
-
-  #sum_up_page section > section {
-    overflow: auto;
-    width: 100%;
-  }
-
-  #sum_up_page section > section > img {
-    width: calc(50% - 10rem);
-    padding: 2rem;
-    float: left;
-    align-self: flex-start;
-  }
-
-  #sum_up_page section > section > p, address {
-    float: right;
-    display: block;
-    width: 50%;
-    align-self: flex-end;
-  }
-} 
-
-/* medium devices (desktops, 992px and up)*/
-@media (min-width: @screen-md-min) {
-  body {
-    background: url("images/header-jobs-mobile.png") no-repeat;
-    background-size: 100%;
-    background-attachment: center top;
-    width: 100%;
-  }
-
-  body > section > header {
-    text-align: center;
-    font-size: 6rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: auto;
-    padding-top: 3rem;
-  }
-
-  #intro,
-  #team,
-  #projects,
-  #open,
-  #community,
-  #sum-up_page,
-  #sum_up_contact {
-    padding: 0 2rem;
-    margin: 0 2rem;
-  }
-
-  #intro {
-    display: block;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-  }
-
-  #intro > section {
-    padding-top: 2rem;
-  }
-
-  #intro > header > h1 {
-    font-weight: 100;
-    font-size: 5.5rem;
-    padding-top: 3rem;
-  }
-
-  #intro h2 {
-    font-size: 2rem;
-  }
-
-  #intro > section > p {
-    font-weight: 100;
-    font-size: 1.5rem;
-  }
-
-  #intro > section > form > input {
-    width: 100%;
-    height: 3rem;
-    font-size: 2rem;
-    margin: 1rem 0;
-  }
-
-  .intro_contact_email {
-    font-size: 1.5rem;
-    color: black;
-  }
-
-  #intro > section > aside {
-    font-size: 2rem;
-    padding-top: 0.5rem;
-    color: black;
-  }
-
-  .intro_text {
-    width: 40rem;
-    padding-top: 2rem;
-    line-height: 5rem;
-    font-weight: 100;
-    letter-spacing: 0.01rem;
-    font-size: 2.2rem;
-    margin: auto;
-  }
-
-  #team > ul {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #team > ul > li > figure > img {
-    width: 40rem;
-  }
-
-  #team h3 {
-    font-weight: bold;
-    font-size: 5rem;
-  }
-
-  #team p {
-    font-family: 'Roboto';
-    font-weight: 100;
-    font-size: 2rem;
-    line-height: 3rem;
-    position: relative;
-    order: -1;
-  }
-
-  #projects > ul > li {
-    width: 40rem;
-    height: auto;
-    margin: auto;
-  }
-
-  #projects > ul > li > figure > img {
-    width: 35rem;
-    height: 25rem;
-  }
-
-  #projects > ul > li > figure > figcaption {
-    font-size: 2.5rem;
-    line-height: 2.5;
-  }
-
-  #open > ul > li {
-    border-bottom-width: 0.1rem;
-    border-bottom-color: #8F8F8F;
-    border-bottom-style: solid;
-  }
-
-  #open > ul > li > figure > img {
-    width: 25rem;
-    margin: auto;
-  }
-
-  #open > ul > li > figure > figcaption > header {
-    font-size: 3.5rem;
-  }
-
-  #open > ul > li > figure > figcaption > p {
-    font-size: 2rem;
-  }
-
-  #open > ul > li > section > img {
-    width: 12rem;
-    height: 12rem;
-  }
-
-  #community > ul > li > figure {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  #community > ul > li > figure > img {
-    width: 20rem;
-  }
-
-  #community > ul > li > figure > figcaption > header {
-    font-size: 3rem;
-    text-align: center;
-  }
-
-  #community p {
-    font-size: 2rem;
-    line-height: 2;
-    margin: 4rem;
-  }
-
-  #sum_up_page section > section {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  #sum_up_page section > section > img {
-    align-self: center;
-    width: 30rem;
-  }
-
-  #sum_up_page section > section > p, address {
-    align-self: center;
-    width: auto;
-    font-size: 2rem;
-    line-height: 2.5;
-    text-align: center;
-  }
-
-  #sum_up_page > section > section > address {
-    line-height: 2;
-  }
-
-  #sum_up_contact .sum_up_slogan {
-    font-size: 3rem;
-    line-height: 4rem;
-  }
-
-  #sum_up_contact > form > input {
-    width: 100%;
-    height: 4rem;
-    font-weight: 700;
-  }
-
-  #sum_up_contact > p {
-    font-size: 2rem;
-    line-height: 2rem;
-  }
-  #sum_up_contact input.sum-up-submitbox {
-    width: 100%;
-  }
-
-  #sum_up_contact > footer {
-    font-size: 1.2rem;
-  }
-}
-
-/* large devices (large desktops, 1200px and up)*/
