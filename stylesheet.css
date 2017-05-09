@@ -67,15 +67,14 @@ body > header > nav > ul {
 
 /* main body footer*/
 body > footer {
-  background-color: blue;
+  background: url(images/footer-mobile.png) no-repeat;
+  background-size: cover;
+  font-size: 0.8rem;
+  line-height: 1.4;
   color: white;
   text-align: center;
-  font-family: 'Roboto';
-  font-size: 0.8em;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-  line-height: 1.5rem;
   font-weight: 100;
+  padding: 2rem 0;
 }
 
 /*-- section's header --*/
@@ -86,14 +85,14 @@ body > section > header {
   position: relative;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  padding: 2rem 0;
+  padding: 4rem 0 0;
 }
 
 /* section intro*/
 #intro {
   display: flex;
   flex-flow: column wrap;
-  padding-top: 7rem;
+  padding-top: 2rem;
   color: white;
   font-family: "Montserrat";
   padding-bottom: 3rem;
@@ -106,7 +105,7 @@ body > section > header {
 #intro h1 {
   font-size: 2rem;
   text-transform: uppercase;
-  line-height: 3rem;
+  line-height: 1;
   font-weight: 400;
 }
 
@@ -114,10 +113,12 @@ body > section > header {
   font-size: 1.1rem;
   padding-top: 1rem;
   padding-bottom: 2rem;
+  font-weight: 100;
+  text-transform: none;
 }
 
 #intro > section {
-  padding: 0 0;
+  padding: 0;
 }
 
 #intro h2 {
@@ -127,7 +128,7 @@ body > section > header {
   padding-bottom: 2rem;
 }
 
-#intro .p_linehight {
+#intro p {
   line-height: 1.5rem;
 }
 
@@ -139,7 +140,6 @@ body > section > header {
   margin: 0.4rem 0;
   width: 100%;
   padding: 0.4rem;
-  font-family: 'Roboto';
 }
 
 #intro .submit-box {
@@ -159,7 +159,6 @@ body > section > header {
 #intro aside {
   color: black;
   font-size: 0.9rem;
-  font-family: "Roboto";
   padding: 1.7rem 0 0;
   line-height: 1.5;
   font-weight: 100;
@@ -192,7 +191,6 @@ body > section > header {
 }
 
 #team figcaption {
-  font-family: 'Roboto', sans-serif;
   color: white;
   font-weight: 100;
   font-size: 1.5rem;
@@ -222,7 +220,6 @@ body > section > header {
 }
 
 #team p {
-  font-family: 'Roboto';
   font-weight: 400;
   font-size: 0.8rem;
   line-height: 1rem;
@@ -255,7 +252,6 @@ body > section > header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'Roboto';
 }
 
 #projects li {
@@ -344,7 +340,7 @@ body > section > header {
 #sum_up_page figure > img {
   display: block;
   padding: 0 0;
-  height: 25rem;
+  height: auto;
   width: 100%;
 }
 
@@ -398,7 +394,6 @@ body > section > header {
   margin: 0.4rem 0;
   width: 100%;
   padding: 0.4rem;
-  font-family: 'Roboto';
 }
 
 #sum_up_contact input.sum_up_submitbox {
@@ -417,5 +412,11 @@ body > section > header {
   padding: 3rem 0;
   font-size: 0.8rem;
   line-height: 1.4;
-  font-family: "Roboto";
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #intro {
+ 
+  }
 }
