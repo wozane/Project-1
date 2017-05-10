@@ -593,6 +593,7 @@ body > section > header {
     padding: 0 calc((100% - 52rem)/2);
     width: 100%;
   }
+
   #intro {
     padding-top: 5rem;
     padding-left: 5rem;
@@ -696,5 +697,46 @@ body > section > header {
 
   #sumup-page address {
     padding: 0.5rem 0 0.5rem 1rem; 
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  body {
+    background: url("images/background.png") no-repeat;
+    background-size: contain;
+  }
+
+  body > header {
+    padding: 0 calc((100vw - 52rem)/2);
+  }
+
+  #intro {
+    padding: 0 calc((100vw - 52rem)/2);
+  }
+
+  #intro header {
+    padding-top: 12rem;
+  }
+
+  #intro h1 {
+    font-size: 3.75rem;
+  }
+
+  #intro section {
+    padding-top: 8rem;
+  }
+
+  #intro h2 {
+    padding-bottom: 1rem;
+  }
+
+  .intro-line {
+    margin-top: 1rem;
+  }
+
+  #intro aside {
+    font-size: 0.8rem;
+    padding-top: 0;
   }
 }
