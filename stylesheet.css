@@ -479,4 +479,12 @@ body > section > header {
     display: table-caption;
     caption-side: bottom;
   }
+
+  #open li > section {
+    justify-content: center;
+  }
+
+  #open li > section > img {
+    margin: 0.5rem;
+  }
 }
