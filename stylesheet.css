@@ -92,7 +92,7 @@ body > section > header {
 #intro {
   display: flex;
   flex-flow: column wrap;
-  padding-top: 2rem;
+  padding-top: 5rem;
   color: white;
   font-family: "Montserrat";
   padding-bottom: 3rem;
@@ -417,6 +417,36 @@ body > section > header {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   #intro {
- 
+    display: flex;
+    flex-flow: nowrap; 
+  }
+
+  #intro header {
+    flex-basis: auto;
+    padding-top: 8rem;
+  }
+
+  #intro h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+  }
+
+  #intro header > p {
+    font-size: 2rem;
+    padding-top: 1.2rem;
+  }
+
+  #intro section {
+    flex-basis: 24rem;
+    padding-left: 1rem;
+    padding-top: 3rem;
+  }
+
+  #intro input {
+    margin: 0.5rem 0;
+  }
+
+  .intro_contact_email {
+    color: white;
   }
 }
