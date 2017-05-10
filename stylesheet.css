@@ -487,4 +487,23 @@ body > section > header {
   #open li > section > img {
     margin: 0.5rem;
   }
+
+  #community figure {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #community figcaption {
+    padding-left: 4rem;
+  }
+
+  #community figcaption > header {
+    align-self: flex-start;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  #community figcaption > p {
+    text-align: left;
+  }
 }
