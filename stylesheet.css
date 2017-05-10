@@ -583,8 +583,118 @@ body > section > header {
     padding-left: 0;
   }
 
+  #intro,
+  #team,
+  #projects,
+  #open,
+  #community,
+  #sumup-page,
+  #sumup-contact {
+    padding: 0 calc((100% - 52rem)/2);
+    width: 100%;
+  }
   #intro {
+    padding-top: 5rem;
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .intro-text {
+    padding-top: 3rem;
+    width: 52rem;
+    margin: auto;
+  }
+
+  #team li {
+    margin: 1.25rem;
+    width: auto;
+    height: auto;
+  }
+
+  #team li > figure > img {
+    width: 14rem;
+  }
+
+  #team figcaption > header {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #team figcaption > p {
+    font-weight: 100;
+    font-size: 0.7rem;
+  }
+
+  #projects ul {
+    margin: 0;
+  }
+
+  #projects li {
+    flex-grow: 1;
+    padding: 1rem;
+    min-height: 17rem;
+  }
+
+  #projects figure > img {
+    width: 12rem;
+    height: auto;
+  }
+
+  #open li {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  #open figure {
+    display: flex;
+  }
+
+  #open figure > img {
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  #open figcaption {
+    text-align: left;
+  }
+
+  #open figcaption > header {
+    padding-bottom: 1rem;
+  }
+
+  #open figcaption > p {
+    font-weight: 100;
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
+  #open li > section {
+    padding-top: 0;
+  }
+
+  #sumup-page > section {
+    display: flex;
+  }
+
+  #sumup-page > section > section {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 5rem 0 0 3rem;
+  }
+
+  #sumup-page > section > section > img {
+    padding: 0;
+  }
+
+  #sumup-page > section > section > p, address {
+    padding-left: 1rem;
+    width: 100%;
+  }
+
+  #sumup-page address {
+    padding: 0.5rem 0 0.5rem 1rem; 
   }
 }
