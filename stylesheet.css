@@ -464,4 +464,19 @@ body > section > header {
   #team figure > img {
     width: 20rem;
   }
+
+  #projects ul {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  #projects li {
+    padding: 2rem;
+  }
+
+  #projects figcaption {
+    width: 100%;
+    display: table-caption;
+    caption-side: bottom;
+  }
 }
