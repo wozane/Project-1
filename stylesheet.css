@@ -301,7 +301,6 @@ body > header > nav > ul > li > a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  font-family: 'Roboto', sans-serif;
 }
 
 #open > ul > li {
@@ -345,10 +344,10 @@ body > header > nav > ul > li > a {
 }
 
 /*-- community section --*/
+
 #community > ul {
   display: flex;
   flex-flow: row wrap;
-  font-family: 'Roboto', sans-serif;
 }
 
 #community > ul > li > figure {
@@ -365,12 +364,6 @@ body > header > nav > ul > li > a {
   font-weight: bold ;
   padding-bottom: 1rem;
   font-size: 1.4rem;
-}
-
-#community p,
-#open p {
-  font-weight: 100;
-  line-height: 160%;
 }
 
 /*-- sum-up page --*/
@@ -401,14 +394,11 @@ body > header > nav > ul > li > a {
 #sum-up_contact > p {
   padding: 0.5rem;
   line-height: 1.5rem;
-  text-align: center;
 }
 
 #sum-up_contact > form > input {
   margin-bottom: 0.5rem;
-  border: 0.01rem solid grey;
 }
-
 #sum-up_contact > footer {
   width: 45rem;
   padding: 1rem;
@@ -421,19 +411,15 @@ body > header > nav > ul > li > a {
   padding: 0.5rem;
 }
 
-#sum-up_contact input.sum-up-submitbox {
+.sum-up-submitbox {
   background-color: #73e600;
-  display: block;
-  border: none;
   margin: auto;
-  width: 6rem;
-  border-radius: 1rem;
-  color: white;
+  display: block;
 }
 
 .sum_up-slogan {
   color: #73e600;
-  font-size: 1.5rem;
+  font-size: 1em;
   font-weight: normal;
   padding: 1rem;
 }
