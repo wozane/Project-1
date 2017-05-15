@@ -181,35 +181,15 @@ body > header > nav {
 
 /*-- projects section --*/
 #projects ul {
- display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-#projects ul li {
-  align-self: flex-end;
-  padding: 1rem;
-  width: 12rem;
-  margin: 1rem;
-}
-
-#projects ul li figure {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
   display: table;
 }
 
-#projects ul li figure img {
-  width: 12.25rem;
-  height: 10rem;
-}
-
-#projects ul li figure figcaption {
-  text-align: center;
-  width: 100%;
-  display: table-caption;
-  caption-side: bottom;
-  font-size: 0.9em;
+#projects ul li {
+  display: inline-block;
 }
 
 /*-- open-source section --*/
