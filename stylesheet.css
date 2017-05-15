@@ -60,7 +60,6 @@ body > header {
   justify-content: space-between;
   height: 5rem;
   align-items: center;
-  position: fixed;
 }
 
 body > header > img {
@@ -108,7 +107,7 @@ body > header > nav > ul > li > a {
   color: white;
   padding-bottom: 4rem;
   flex-direction: row;
-  padding-top: 6rem;
+  padding-top: 3rem;
  }
 
 #intro > section {
@@ -195,7 +194,6 @@ body > header > nav > ul > li > a {
   line-height: 2.5rem;
   font-weight: 100;
   font-size: 1.2rem
-  padding-bottom: 2rem;
 }
 
 /*-- team section --*/
