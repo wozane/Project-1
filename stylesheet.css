@@ -322,34 +322,3 @@ body > section > header {
   line-height: 1.6;
   text-align: center;
 }
-
-/* sum_up_page section*/
-#sum_up_page figure > img {
-  display: block;
-  padding: 0 0;
-  height: 25rem;
-  width: 100%;
-}
-
-#sum_up_page section > section {
-  display: block;
-  line-height: 1.5;
-  text-align: center;
-  padding: 1rem 2rem;
-}
-
-#sum_up_page section > section > img {
-  margin: 0.5rem 0;
-}
-
-#sum_up_page section > section > p {
-  text-align: left;
-  font-weight: 100;
-}
-
-#sum_up_page address {
-  font-style: normal;
-  font-weight: 100;
-  text-align: left;
-  padding: 0.5rem 0;
-}
