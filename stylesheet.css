@@ -571,39 +571,6 @@ body > footer {
   }
 
   #team > ul > li > figure > img {
-    width: 25rem;
-  }
-
-  #team > ul > li > figure > figcaption > p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
-  #team > ul > li > figure > figcaption > footer {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-  }
-
-  #projects > ul {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #projects > ul > li {
     width: 20rem;
-    height: auto;
-  }
-
-  #projects > ul > li > figure > img {
-    width: 20rem;
-    height: 18rem;
-  }
-
-  #projects > ul > li > figure > figcaption {
-    font-size: 1.5rem;
-    line-height: 1.3;
   }
 }
