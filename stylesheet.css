@@ -84,13 +84,6 @@ a:hover {
   text-align: right;
 }
 
-#intro > section > footer {
-  font-size: 70%;
-  text-align: justify;
-  text-justify: inter-word;
-  text-align: center;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -118,7 +111,12 @@ a:hover {
   text-align: right;
 }
 
-
+.submit-text {
+  font-size: 75%;
+  text-align: justify;
+  text-justify: inter-word;
+  text-align: center;
+}
 
 .intro-text {
   text-align: center;
