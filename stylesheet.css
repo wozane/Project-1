@@ -336,7 +336,8 @@ body > header > nav > ul > li > a {
 
 #open > ul > li > figure > img {
   float: left;
-padding: 1rem;
+  padding: 2rem;
+  width: 7rem;
 }
 
 #open > ul > li > figure > figcaption {
