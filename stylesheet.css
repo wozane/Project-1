@@ -64,17 +64,6 @@ body > header > nav > ul {
   display: none;
 }
 
-/*-- section's header --*/
-body > section > header {
-  font-size: 2.25rem;
-  text-align: center;
-  text-transform: uppercase;
-  position: relative;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  padding: 2rem 0;
-}
-
 /* section intro*/
 #intro {
   display: flex;
@@ -145,12 +134,4 @@ body > section > header {
   padding: 1.7rem 0 0;
   line-height: 1.5;
   font-weight: 100;
-}
-
-.intro_text {
-  text-align: center;
-  font-size: 1.3rem;
-  font-weight: 100;
-  line-height: 1.5;
-  padding-bottom: 1rem;
 }
