@@ -189,8 +189,8 @@ body > header > img {
 }
 
 #open > ul > li {
-  border-bottom-width: medium;
-  border-bottom: 0.25rem solid lightgrey;
+  border-bottom-width: 0.1rem;
+  border-bottom: 2rem solid lightgrey;
   border-color: #8F8F8F;
   padding: 1rem 1.25rem;
   display: inline-table;
