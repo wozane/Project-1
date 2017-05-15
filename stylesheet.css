@@ -129,7 +129,7 @@ body > header > nav {
 
 #intro > section > aside {
   text-align: right;
-  font-size: 0.6em;
+  font-size: 70%;
 }
 
 .contact-box {
@@ -159,7 +159,7 @@ body > header > nav {
 .intro-text {
   text-align: center;
   margin: auto;
-  width: 52rem;
+  width: 50%;
   padding-top: 2rem;
 }
 
@@ -265,9 +265,9 @@ body > header > nav {
   text-align: center;
 }
 
-.sum_up-slogan {
+.sum-green {
   color: #73e600;
-  font-size: 1em;
+  font-size: 150%;
   font-weight: normal;
 }
 
@@ -276,5 +276,5 @@ body > header > nav {
   background-color: blue;
   color: white;
   text-align: center;
-  font-size: 0.75em;
+  font-size: 75%;
 }
