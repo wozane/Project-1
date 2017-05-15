@@ -449,19 +449,4 @@ body > section > header {
   .intro_contact_email {
     color: white;
   }
-
-  #team ul {
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 2rem 0;
-  }
-
-  #team li {
-    width: 20rem;
-    margin: 3rem 1.25rem;
-  }
-
-  #team figure > img {
-    width: 20rem;
-  }
 }
