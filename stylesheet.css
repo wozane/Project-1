@@ -506,28 +506,4 @@ body > section > header {
   #community figcaption > p {
     text-align: left;
   }
-
-  #sum_up_page figure > img {
-    width: auto;
-    margin: auto;
-    padding: 2rem 0 6rem;
-  }
-
-  #sum_up_page section > section {
-    overflow: auto;
-    padding: 0 calc((100vw - 52rem)/2);
-    margin: auto;
-  }
-
-  #sum_up_page section > section > img {
-    padding-left: 10rem;
-    padding-bottom: 3rem;
-    float: left;
-  }
-
-  #sum_up_page section > section > p, address {
-    display: block;
-    float: right;
-    width: 50%;
-  }
 }
