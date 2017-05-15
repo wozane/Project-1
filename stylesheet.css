@@ -438,9 +438,7 @@ padding: 1rem;
 
 #sum-up_contact > form > input {
   margin-bottom: 0.5rem;
-  border: 0.01rem solid #DADADA;
-  width: 20rem;
-  margin: 1.5rem 0.5rem;
+  border: 0.01rem solid grey;
 }
 
 #sum-up_contact > footer {
@@ -463,10 +461,8 @@ padding: 1rem;
   border: none;
   margin: auto;
   width: 6rem;
-  height: 2.5rem;
-  border-radius: 2rem;
+  border-radius: 1rem;
   color: white;
-  font-weight: bold;
 }
 
 .sum_up-slogan {
