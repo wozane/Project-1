@@ -9,9 +9,8 @@ body {
   font-family: Verdana, Arial, sans-serif;
   margin: auto;
   box-sizing: border-box;
-  background: url("images/background.png") no-repeat;
-  background-size: 100% 10%;
-  background-attachment: center top;
+  background: url("images/background.png") no-repeat center fixed;
+  background-size: cover;
 }
 
 ul {
