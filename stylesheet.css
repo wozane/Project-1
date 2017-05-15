@@ -62,31 +62,40 @@ body > header > img {
   padding-left: 1rem;
 }
 
-body > header > nav:before{
+body.menu-mobile-active {
+  overflow-y: hidden;
+}
+
+body.menu-mobile-active #main-nav:before{
   content: url("images/mobile-menu.png");
   width: auto;
   height: auto;
   display: block;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
 }
 
-body > header > nav > ul > li {
-  float: left;
-}
-
- body > header > nav > ul > li, a .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: left;
-  text-decoration: none;
+body.menu-mobile-active #main-nav ul {
+  background-color: #1E1E1E;
+  position: absolute;
+  top: 5rem;
+  left: 0;
   width: 100%;
-  line-height: 2rem;
+  height: 100vh;
 }
 
+body.menu-mobile-active #main-nav li a {
+  display: block;
+  color: white;
+  padding: 1rem;
+}
+
+/*
 .dropdown-content {
   display: flex;
   flex-flow: row wrap;
-  position: absolute;
-  background-color: #1E1E1E;
+
   color: #fff;
   width: 100%;
   z-index: 1;
@@ -105,6 +114,7 @@ body > header > nav > ul > li {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+*/
 
 /* main body footer*/
 body > footer {
@@ -154,7 +164,7 @@ body > section > header > img {
   font-weight: 400;
 }
 
-#intro > header > p {
+#intro header > p {
   font-size: 1.1rem;
   padding-top: 1rem;
   padding-bottom: 2rem;
@@ -498,6 +508,10 @@ body > section > header > img {
     background-position-y: 2rem;
   }
 
+  body.menu-mobile-active #main-nav ul {
+    height: initial;
+  }
+
   #team,
   #projects,
   #open,
@@ -571,6 +585,7 @@ body > section > header > img {
     width: 100%;
     display: table-caption;
     caption-side: bottom;
+    text-align: center;
   }
 
   #open li {
@@ -617,7 +632,7 @@ body > section > header > img {
 
   #sumup-page section > section > img {
     padding-left: 10rem;
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
     float: left;
   }
 
@@ -652,7 +667,6 @@ body > section > header > img {
 @media (min-width: 992px) {
   body > header {
     width: 100%;
-    padding: 0 1rem;
   }
 
   body > header > img {
@@ -679,12 +693,16 @@ body > section > header > img {
     margin: 0;
     line-height: 5rem;
     flex-grow: 1;
-    text-align: center;
+    justify-content: space-between;
   }
 
   body > header > nav > ul > li > a {
     height: 100%;
     display: block;
+    color: black;
+    text-align: center;
+    padding: 0.5rem;
+    line-height: 4rem;
   }
 
   body > header > img {
