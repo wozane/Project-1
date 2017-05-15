@@ -36,7 +36,6 @@ body {
   margin: auto;
   background-position: 0 5rem;
   background: url("images/header.png") no-repeat;
-  background-position-y: 5rem;
   box-sizing: border-box;
   line-height: 1;
 }
@@ -50,7 +49,7 @@ body > header {
   width: 100%;
   background-color: white;
   margin: auto;
-  height: 5rem;
+  height: 10vh;
   position: fixed;
   display: flex;
   align-items: center;
@@ -62,51 +61,9 @@ body > header > img {
   padding-left: 1rem;
 }
 
-body > header > nav:before{
-  content: url("images/mobile-menu.png");
-  width: auto;
-  height: auto;
-  display: block;
+body > header > nav > ul {
+  display: none;
 }
-
-body > header > nav > ul > li {
-    float: left;
-}
-
- body > header > nav > ul > li, a .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: left;
-    text-decoration: none;
-    width: 100%;
-    line-height: 2rem;
-}
-
-.dropdown-content {
-  display: flex;
-  flex-flow: row wrap;
-  position: absolute;
-  background-color: #1E1E1E;
-  color: #fff;
-  width: 100%;
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: white;
-  padding: 1rem;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {background-color: blue;}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/*************************/
 
 /* main body footer*/
 body > footer {
@@ -127,19 +84,15 @@ body > section > header {
   text-transform: uppercase;
   position: relative;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+  font-weight: bold;
   padding: 4rem 0 0;
-}
-
-body > section > header > img {
-  margin-top: 2rem;
 }
 
 /* section intro*/
 #intro {
   display: flex;
   flex-flow: column wrap;
-  padding-top: 3rem;
+  padding-top: 5rem;
   color: white;
   font-family: "Montserrat";
   padding-bottom: 3rem;
@@ -194,11 +147,10 @@ body > section > header > img {
   border: none;
   border-radius: 2rem;
   color: white;
-  font-weight: 400;
-  font-size: 1.25rem;
+  font-weight: bold;
 }
 
-#intro .intro-contact-email {
+.intro-contact-email {
   text-align: right;
   padding-bottom: 1rem;
   color: black;
@@ -217,14 +169,7 @@ body > section > header > img {
   font-size: 1.3rem;
   font-weight: 100;
   line-height: 1.5;
-  padding-bottom : 1rem;
-}
-
-#intro .intro-line {
-  border: 1px solid white;
-  width: 2rem;
-  height: 0.1rem;
-  margin-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 /* team section */
@@ -260,7 +205,7 @@ body > section > header > img {
 }
 
 #team h3 {
-  font-weight: 400;
+  font-weight: bold;
   font-size: 3rem;
   text-align: center;
 }
@@ -321,9 +266,6 @@ body > section > header > img {
 
 #projects figure > img {
   margin: 1.3rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #projects figcaption {
@@ -336,9 +278,9 @@ body > section > header > img {
 }
 
 #open li {
+  border-bottom-width: medium;
   border-bottom: 0.1rem solid lightgrey;
   border-color: #8F8F8F;
-  margin: 2.5rem 0;
 }
 
 #open figcaption > header {
@@ -355,14 +297,12 @@ body > section > header > img {
   padding: 1rem 0;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin-bottom: 2rem;
+  justify-content: space-around;
 }
 
 #open li > section > img {
   width: 6rem;
   height: 6rem;
-  margin: 0.75rem;
 }
 
 /* community section */
@@ -393,21 +333,14 @@ body > section > header > img {
   font-size: 0.9rem;
   font-weight: 100;
   line-height: 1.6;
-  text-align: left;
+  text-align: center;
 }
 
 /* sumup-page section*/
-#sumup-page > header {
-  font-size: 1.8rem;
-}
-
-#sumup-page section {
-  padding: 0;
-}
 #sumup-page figure > img {
   display: block;
-  padding: 0;
-  height: 23rem;
+  padding: 0 0;
+  height: auto;
   width: 100%;
 }
 
@@ -423,27 +356,15 @@ body > section > header > img {
 }
 
 #sumup-page section > section > p {
-  text-align: center;
+  text-align: left;
   font-weight: 100;
-  padding: 0.5rem 0;
 }
 
 #sumup-page address {
   font-style: normal;
   font-weight: 100;
-  text-align: center;
+  text-align: left;
   padding: 0.5rem 0;
-}
-
-#sumup-page section > section > p, address {
-  display: block;
-}
-
-#sumup-page a {
-  color: blue;
-  font-weight: 400;
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
 }
 
 /* sumup-contact section */
@@ -484,7 +405,7 @@ body > section > header > img {
   height: 2.5rem;
   border-radius: 2rem;
   color: white;
-  font-weight: 400;
+  font-weight: bold;
 }
 
 #sumup-contact footer {
@@ -495,21 +416,6 @@ body > section > header > img {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  body {
-    background-position-x: -4rem;
-    background-position-y: 2rem;
-  }
-
-  #team,
-  #projects,
-  #open,
-  #community,
-  #sumup-page,
-  #sumup-contact {
-    padding: 0 calc((100% - 52rem)/2);
-    width: 100%;
-  }
-
   #intro {
     display: flex;
     flex-flow: nowrap; 
@@ -526,21 +432,29 @@ body > section > header > img {
   }
 
   #intro header > p {
-    font-size: 2.4rem;
-    padding-top: 1.4rem;
+    font-size: 2rem;
+    padding-top: 1.2rem;
   }
 
   #intro section {
     flex-basis: 24rem;
-    padding-top: 6rem;
+    padding-left: 1rem;
+    padding-top: 3rem;
   }
 
   #intro input {
     margin: 0.5rem 0;
   }
 
-  #intro .intro-contact-email {
+  .intro-contact-email {
     color: white;
+  }
+
+  .intro-line {
+    border: 1px solid white;
+    width: 2rem;
+    height: 0.1rem;
+    margin-top: 0.5rem;
   }
 
   #team ul {
@@ -573,9 +487,6 @@ body > section > header > img {
     caption-side: bottom;
   }
 
-  #open li {
-    border: none;
-  }
   #open li > section {
     justify-content: center;
   }
@@ -617,7 +528,7 @@ body > section > header > img {
 
   #sumup-page section > section > img {
     padding-left: 10rem;
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
     float: left;
   }
 
@@ -625,11 +536,6 @@ body > section > header > img {
     display: block;
     float: right;
     width: 50%;
-    text-align: left;
-  }
-
-  #sumup-page address {
-    text-align: left;
   }
 
   #sumup-contact input {
@@ -654,11 +560,6 @@ body > section > header > img {
     width: 100%;
     padding: 0 1rem;
   }
-
-  body > header > img {
-    width: 9rem;
-  }
-
   body > header > nav {
     max-width: initial;
     flex-grow: 7;
@@ -673,14 +574,9 @@ body > section > header > img {
   body > header > nav > ul > li {
     padding: 0;
     margin: 0;
-    line-height: 5rem;
+    line-height: 6rem;
     flex-grow: 1;
     text-align: center;
-  }
-
-  body > header > nav > ul > li > a {
-    height: 100%;
-    display: block;
   }
 
   body > header > img {
@@ -750,9 +646,6 @@ body > section > header > img {
     flex-direction: row;
     padding-top: 2rem;
     padding-bottom: 1.5rem;
-    border-bottom-width: medium;
-    border-bottom: 0.1rem solid lightgrey;
-    border-color: #8F8F8F;
   }
 
   #open figure {
@@ -760,8 +653,8 @@ body > section > header > img {
   }
 
   #open figure > img {
-    padding-right: 4rem;
-    padding-bottom: 4rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
   }
 
   #open figcaption {
@@ -784,33 +677,26 @@ body > section > header > img {
 
   #sumup-page > section {
     display: flex;
-    justify-content: center;
   }
 
   #sumup-page > section > section {
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 0 0 0 3rem;
+    padding: 5rem 0 0 3rem;
   }
 
-  #sumup-page figure > img {
+  #sumup-page > section > section > img {
     padding: 0;
-  }
-
-  #sumup-page section > section > img {
-    padding: 2rem;
   }
 
   #sumup-page > section > section > p, address {
     padding-left: 1rem;
     width: 100%;
-    text-align: left;
   }
 
   #sumup-page address {
     padding: 0.5rem 0 0.5rem 1rem; 
-    text-align: left;
   }
 }
 
