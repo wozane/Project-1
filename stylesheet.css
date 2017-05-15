@@ -456,7 +456,7 @@ body > section > header {
     height: 0.1rem;
     margin-top: 0.5rem;
   }
-
+  
   #team ul {
     flex-flow: row wrap;
     justify-content: center;
@@ -551,40 +551,5 @@ body > section > header {
 
   #sumup-contact footer {
     padding: 3rem 8rem;
-  }
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  body > header {
-    width: 100%;
-    padding: 0 1rem;
-  }
-  body > header > nav {
-    max-width: initial;
-    flex-grow: 7;
-    padding-left: 4rem;
-  }
-
-  body > header > nav > ul {
-    display: flex;
-    position: initial;
-  }
-
-  body > header > nav > ul > li {
-    padding: 0;
-    margin: 0;
-    line-height: 6rem;
-    flex-grow: 1;
-    text-align: center;
-  }
-
-  body > header > img {
-    padding-left: 0;
-  }
-
-  #intro {
-    padding-left: 5rem;
-    padding-right: 5rem;
   }
 }
