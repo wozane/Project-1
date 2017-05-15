@@ -258,36 +258,3 @@ body > section > header {
 #projects figcaption {
   text-align: center;
 }
-
-/* open source section */
-#open {
-  text-align: center;
-}
-
-#open li {
-  border-bottom-width: medium;
-  border-bottom: 0.1rem solid lightgrey;
-  border-color: #8F8F8F;
-}
-
-#open figcaption > header {
-  font-size: 1.75rem;
-  padding-bottom: 0.5rem;
-}
-
-#open figcaption > p {
-  line-height: 1.3;
-  padding-bottom: 0.5rem;
-}
-
-#open li > section {
-  padding: 1rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-#open li > section > img {
-  width: 6rem;
-  height: 6rem;
-}
