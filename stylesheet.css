@@ -1,7 +1,5 @@
 html {     
   box-sizing: border-box; 
-  background: url("images/background.png") no-repeat center center fixed;
-  background-size: cover;
 } 
 
 *, *:before, *:after {     
@@ -12,7 +10,7 @@ body {
   background-color: white;
   font-family: Verdana, Arial, sans-serif;
   margin: auto;
-
+  width: 100%;
 }
 
 ul {
@@ -46,10 +44,6 @@ body > section > header {
   padding-top: 60px;
 }
 
-body > header {
-  margin: auto;
-}
-
 #intro,
 #team,
 #projects,
@@ -57,7 +51,7 @@ body > header {
 #community,
 #sum-up {
   margin: auto;
-  width: 50%;
+  max-width: 50%;
 }
 
 /*-- img in sections --*/
@@ -116,10 +110,6 @@ body > header {
   text-align: center;
 }
 
-#logo {
-  float: left; 
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -149,8 +139,8 @@ body > header {
 
 .intro-text {
   text-align: center;
+  max-width: 50%;
   margin: auto;
-  width: 50%;
 }
 
 /*-- team section --*/
@@ -178,53 +168,40 @@ body > header {
 
 #projects ul li {
   display: inline-block;
-  max-width: 33%;
+  
 }
 
-/*-- open-source section --*/
-#open {
-  color: #373737;
+#projects figure > figcaption {
   text-align: center;
+  width: 100%;
+  display: table-caption;
+  caption-side: bottom;
 }
 
-#open > header {
-  margin-bottom: 5rem;
+#projects figure > img {
+  margin: 1.25rem;
 }
 
-#open > ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  text-align: center;
-  display: table;
+/*-- open source section --*/
+.open-logo {
+  display: block;
+  margin: auto;
 }
 
-#open > ul > li {
-  border-bottom-width: 0.1rem;
+.open-border {
+  display: -webkit-flex;
+  display: -ms-flex;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   border-bottom: 2px solid lightgrey;
-  border-color: #8F8F8F;
-  padding: 1rem 1.25rem;
-  display: table;
 }
 
-#open > ul > li > figure {
-  display: inline;
-}
-
-#open > ul > li > figure > img {
-  float: left;
-}
-
-#open > ul > li > figure > figcaption {
-  float: centre;
-}
-
-#open > ul > li > figure > li > img {
-  transform: scale(0.5, 0.5);
+.open-part {
+  display: block;
+  margin: auto;
   float: right;
-  position: absolute;
 }
-
 
 /*-- comm section --*/
 .comm-logo {
@@ -267,3 +244,6 @@ body > header {
   text-align: center;
   font-size: 75%;
 }
+
+#logo { float: left; }
+
