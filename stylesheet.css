@@ -270,7 +270,8 @@ body > header > nav > ul > li {
 
 #community > ul {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 #community > ul > li > figure {
