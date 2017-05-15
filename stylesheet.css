@@ -82,15 +82,21 @@ body > header > img {
 #intro > section {
   padding: 1rem;
   padding-bottom: 2rem;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 
 #intro > header {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  flex-grow: 2;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-positive: 2;
+      flex-grow: 2;
   align-items: flex-start;
 }
 
@@ -100,11 +106,15 @@ body > header > img {
 }
 
 #intro > section  {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -ms-flex-direction: column;
+      flex-direction: column;
   text-align: left;
-  flex-grow: 1;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
   align-items: stretch;
   word-wrap: break-word;
 }
