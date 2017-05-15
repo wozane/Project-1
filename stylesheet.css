@@ -99,7 +99,7 @@ body > header > nav > ul > li > a {
 #open,
 #community,
 #sum-up_page,
-#sum_up_contact {
+#sum-up_contact {
   padding: 0 calc((100% - 52rem)/2);
   width: 100%;
 }
@@ -168,7 +168,7 @@ body > header > nav > ul > li > a {
 }
 
 #intro > section > form > input,
-#sum_up_contact > form > input {
+#sum-up_contact > form > input {
   border-radius: 0.5rem;
   padding: 0.5rem;
   width: 14rem;
@@ -400,12 +400,12 @@ padding: 1rem;
 }
 
 /*-- sum-up page --*/
-#sum_up_page > section {
+#sum-up_page > section {
   display: flex;
   justify-content: space-between;
 }
 
-#sum_up_page > section > section > address{
+#sum-up_page > section > section > address{
   align-self: center;
   font-family: 'Roboto';
   font-weight: 100;
@@ -414,36 +414,36 @@ padding: 1rem;
   padding-bottom: 1rem;
   line-height: 1.5rem;
 }
-#sum_up_page > section > section {
+#sum-up_page > section > section {
   align-self: center;
 }
 
-#sum_up_page p {
+#sum-up_page p {
   font-family: 'Roboto';
   font-weight: 100;
 }
 
-#sum_up_contact {
+#sum-up_contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#sum_up_contact > p {
+#sum-up_contact > p {
   padding: 0.5rem;
   line-height: 1.5rem;
   text-align: center;
 }
 
-#sum_up_contact > form > input {
+#sum-up_contact > form > input {
   margin-bottom: 0.5rem;
   border: 0.01rem solid #DADADA;
   width: 20rem;
   margin: 1.5rem 0.5rem;
 }
 
-#sum_up_contact > footer {
+#sum-up_contact > footer {
   max-width: 34rem;
   font-size: 0.9em;
   margin: auto;
@@ -451,7 +451,13 @@ padding: 1rem;
   margin-bottom: 3rem;
 }
 
-#sum_up_contact input.sum-up-submitbox {
+.sum-contact{
+  width: 22rem;
+  height: 2rem;
+  padding: 0.5rem;
+}
+
+#sum-up_contact input.sum-up-submitbox {
   background-color: #73e600;
   display: block;
   border: none;
@@ -511,7 +517,7 @@ body > footer {
   #open,
   #community,
   #sum-up_page,
-  #sum_up_contact {
+  #sum-up_contact {
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -642,6 +648,4 @@ body > footer {
     font-size: 1.2rem;
     padding-right: 2rem;
   }
-
-  #sum_
 }
