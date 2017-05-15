@@ -12,7 +12,6 @@ body {
   background: url("images/background.png") no-repeat;
   background-size: 100% 10%;
   background-attachment: center top;
-  width: 52rem;
 }
 
 ul {
@@ -59,6 +58,7 @@ body > header {
   background-color: white;
   justify-content: center;
   align-items: center;
+  position: fixed;
 }
 
 body > header > img {
@@ -69,6 +69,17 @@ body > header > img {
 body > header > nav {
   display: flex;
   justify-content: space-around;
+}
+
+#intro,
+#team,
+#projects,
+#open,
+#community,
+#sum-up_page,
+#sum-up_contact {
+  margin: auto;
+  width: 52rem;
 }
 
 /*-- intro seciton --*/
