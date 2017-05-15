@@ -181,7 +181,7 @@ body > header > nav {
 
 /*-- projects section --*/
 #projects ul {
-  display: flex;
+ display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
@@ -223,53 +223,47 @@ body > header > nav {
 }
 
 #open > ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  display: table;
 }
 
 #open > ul > li {
   border-bottom-width: medium;
-  border-bottom: 0.1rem solid lightgrey;
+  border-bottom: 0.25rem solid lightgrey;
   border-color: #8F8F8F;
   padding: 1rem 1.25rem;
-  display: flex;
-  flex-direction: row;
-}
-#open > ul > li > figure {
-  display: flex;
+  display: inline-table;
+  width: auto;
 }
 
 #open > ul > li > figure > img {
   float: left;
-  padding: 2rem;
-  width: 7rem;
+  padding: 10rem;
 }
 
 #open > ul > li > figure > figcaption {
+  float: center;
   text-align: left;
-  }
+}
 
 #open > ul > li > figure > figcaption > header {
   font-weight: bold;
 }
 
-#open > ul > li > section {
+#open > ul > li > figure > li > img {
+  transform: scale(0.5, 0.5);
   float: right;
-  display: flex;
-  flex-direction: row;
-  padding-left: 2rem;
 }
 
-#open > ul > li > section > img {
-  width: 6rem;
-  height: 6rem;
-}
 /*-- comm section --*/
-#community > ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+.comm-logo {
+  display: block;
+  margin: auto;
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0;
 }
 
 /*-- sum up page --*/
