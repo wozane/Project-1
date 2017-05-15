@@ -47,7 +47,7 @@ body > section > header {
   font-weight: bold;
   text-transform: uppercase;
   margin: auto;
-  padding-top: 5rem;
+  padding-top: 1.5rem;
 }
 
 /*-- header section --*/
@@ -228,14 +228,12 @@ body > header > nav > ul > li > a {
 #projects ul li {
   align-self: flex-end;
   padding: 1rem;
-  width: 13rem;
-  height: 14rem;
-  margin: 2rem;
+  width: 12rem;
+  margin: 1rem;
 }
 
 #projects ul li figure {
   display: table;
-  padding-bottom: 1rem;
 }
 
 #projects ul li figure img {
@@ -255,6 +253,10 @@ body > header > nav > ul > li > a {
 #open {
   color: #373737;
   text-align: center;
+}
+
+#open > header {
+  margin-bottom: 5rem;
 }
 
 #open > ul {
