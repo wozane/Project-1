@@ -85,8 +85,6 @@ body > header > nav {
   display: flex;
   margin-top: 2rem;
   color: white;
-  padding-bottom: 4rem;
-  flex-direction: row;
  }
 
 #intro > section {
@@ -100,20 +98,13 @@ body > header > nav {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  flex-grow: 2;
   align-items: flex-start;
-  flex: 0 0 40rem;
 }
 
 #intro > header > h1 {
+  text-transform: uppercase;
   font-weight: bolder;
-  font-size: 2em;
-  padding-bottom: 0.75rem;
-  text-align: left;
-}
-
-#intro > header > p {
-  text-transform: none;
-  text-align: left;
 }
 
 #intro > section  {
