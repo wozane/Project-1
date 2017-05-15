@@ -265,28 +265,11 @@ body > header > nav {
   width: 6rem;
   height: 6rem;
 }
-/*-- community section --*/
-
+/*-- comm section --*/
 #community > ul {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-}
-
-#community > ul > li > figure {
-  display: flex;
-  align-items: center;
-  padding-bottom: 2rem;
-}
-
-#community > ul > li > figure > img {
-  padding: 2rem;
-}
-
-#community > ul > li > figure > figcaption > header {
-  font-weight: bold ;
-  padding-bottom: 1rem;
-  font-size: 1.4rem;
+  flex-wrap: nowrap;
 }
 
 /*-- sum up page --*/
