@@ -56,6 +56,9 @@ body > header {
   justify-content: center;
 }
 
+body > header > nav {
+ }
+
 body > header > img {
   max-width: 10rem;
 }
@@ -70,60 +73,56 @@ body > header > img {
   width: 50%;
 }
 
+/*-- img in sections --*/
+.img-sec {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 /*-- intro seciton --*/
 #intro {
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-flex;
   display: -ms-flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
- }
-
-#intro > section {
-  padding: 15px;
-  padding-bottom: 30px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
 }
 
 #intro > header {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-positive: 2;
-      flex-grow: 2;
-  align-items: flex-start;
+  -webkit-flex: 2 0 0; 
+  flex: 2 0 0;
+  align-items: center;
+  justify-content: center;
 }
 
-#intro > header > h1 {
-  text-transform: uppercase;
-  font-weight: bolder;
-}
-
-#intro > section  {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  text-align: left;
-  -ms-flex-positive: 1;
-      flex-grow: 1;
-  align-items: stretch;
-  word-wrap: break-word;
+#intro > section {
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0;
+  padding: 15px;
+  padding-bottom: 30px;
 }
 
 #intro > section > aside {
   text-align: right;
-  font-size: 70%;
 }
 
+#intro > section > footer {
+  font-size: 70%;
+  text-align: justify;
+  text-justify: inter-word;
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
 
 .contact-box {
   border-top-left-radius: 15px;
@@ -144,12 +143,14 @@ body > header > img {
   height: 25px;
 }
 
+.text-right {
+  text-align: right;
+}
 
 .intro-text {
   text-align: center;
   margin: auto;
   width: 50%;
-  padding-top: 10px;
 }
 
 /*-- team section --*/
