@@ -10,7 +10,7 @@ body {
   margin: auto;
   box-sizing: border-box;
   background: url("images/background.png") no-repeat;
-  background-size: 100% 15%;
+  background-size: 100% 10%;
   background-attachment: center top;
   width: 100%;
 }
@@ -20,6 +20,7 @@ ul {
 }
 
 li {
+  display: inline;
   text-decoration: none;
 }
 
@@ -36,51 +37,38 @@ a:link {
 
 /*-- link hovered --*/
 a:hover {
-  background-color: blue;
-  color: white;
+    background-color: blue;
+    color: white;
 }
 
-/*-- section's header --*/
+/*-- sections header --*/
 body > section > header {
   text-align: center;
   font-size: 2em;
-  font-weight: 700;
+  font-weight: 900;
   text-transform: uppercase;
   margin: auto;
-  padding-top: 1.5rem;
+  padding-top: 6rem;
 }
 
-/*-- header section --*/
+/*-- header seciton --*/
 body > header {
   display: flex;
-  padding: 0 calc((100vw - 52rem)/2);
+  top: 0;
   width: 100%;
   background-color: white;
-  margin: auto;
   justify-content: center;
+  align-items: center;
 }
 
 body > header > img {
   max-width: 10rem;
-  max-height: 4rem;
-  align-self: center;
+  padding-right: 2rem;
 }
 
 body > header > nav {
   display: flex;
   justify-content: space-around;
-}
-
-body > header > nav > ul {
-  display: flex;
-}
-
-body > header > nav > ul > li {
-  padding: 0.5rem;
-  margin: 0;
-  line-height: 5rem;
-  flex-grow: 1;
-  text-align: center;
 }
 
 #intro,
@@ -94,7 +82,7 @@ body > header > nav > ul > li {
   width: 100%;
 }
 
-/*-- intro section --*/
+/*-- intro seciton --*/
 #intro {
   display: flex;
   margin-top: 2rem;
@@ -104,13 +92,18 @@ body > header > nav > ul > li {
  }
 
 #intro > section {
+  padding: 1rem;
+  padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   text-align: left;
   align-items: stretch;
   word-wrap: break-word;
-  padding: 0.5rem;
+}
+
+#intro > header {
+
 }
 
 #intro > header > h1 {
@@ -141,9 +134,11 @@ body > header > nav > ul > li {
   font-size: 0.6em;
 }
 
-#intro > section > form > input,
-#sum-up_contact > form > input {
-  border-radius: 1rem;
+.contact-box {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
   width: 14rem;
   height: 2rem;
   padding: 0.5rem;
@@ -151,6 +146,12 @@ body > header > nav > ul > li {
 
 .submit-box {
   background-color: #73e600;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  width: 14rem;
+  height: 2rem;
 }
 
 .intro-contact-email {
@@ -169,9 +170,10 @@ body > header > nav > ul > li {
 #team ul {
   margin: 0;
   padding: 0;
+  list-style-type: none;
   text-align: center;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: wrap;
   justify-content: center;
 }
 
@@ -337,6 +339,13 @@ body > header > nav > ul > li {
 
 .sum-up-submitbox {
   background-color: #73e600;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  width: 7rem;
+  height: 2rem;
+  text-align: center;
   margin: auto;
   display: block;
 }
