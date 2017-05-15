@@ -128,17 +128,17 @@ body > section > header {
 
 /*-- team section --*/
 
-#team ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  text-align: center;
+.img-sec {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
-
-#team ul li {
-  display: inline-block;
-}
-
 
 /*-- open source section --*/
 .open-logo {
