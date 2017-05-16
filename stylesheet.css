@@ -58,8 +58,9 @@ body > header {
   z-index: 1;
 }
 
-body > header > img {
-  padding-left: 1rem;
+body.menu-company-logo {
+  background-image: url("images/rebased-logo-full.png");
+  background-size: 4rem;
 }
 
 body.menu-mobile-active {
@@ -90,31 +91,6 @@ body.menu-mobile-active #main-nav li a {
   color: white;
   padding: 1rem;
 }
-
-/*
-.dropdown-content {
-  display: flex;
-  flex-flow: row wrap;
-
-  color: #fff;
-  width: 100%;
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: white;
-  padding: 1rem;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover { background-color: blue; }
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-*/
 
 /* main body footer*/
 body > footer {
@@ -216,8 +192,9 @@ body > section > header > img {
   color: black;
   font-size: 0.9rem;
   padding: 1.7rem 0 0;
-  line-height: 1.5;
+  line-height: 1.2;
   font-weight: 100;
+  font-family: "Roboto";
 }
 
 .intro-text {
@@ -873,5 +850,6 @@ body > section > header > img {
   #intro aside {
     font-size: 0.8rem;
     padding-top: 0;
+    font-weight: 400;
   }
 }
