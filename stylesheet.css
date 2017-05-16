@@ -327,11 +327,9 @@ body > section > header > img {
   display: table;
 }
 
-#projects figure > img {
+#projects figure img {
   margin: 1.3rem;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #projects figcaption {
@@ -575,6 +573,7 @@ body > section > header > img {
   #projects ul {
     flex-flow: row wrap;
     justify-content: center;
+    align-items: center;
   }
 
   #projects li {
@@ -759,10 +758,10 @@ body > section > header > img {
   #projects li {
     flex-grow: 1;
     padding: 1rem;
-    min-height: 17rem;
+    max-height: 17rem;
   }
 
-  #projects figure > img {
+  #projects figure img {
     width: 12rem;
     height: auto;
   }
