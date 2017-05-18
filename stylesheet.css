@@ -58,9 +58,14 @@ body > header {
   z-index: 1;
 }
 
-body.menu-company-logo {
+#menu-company-logo {
   background-image: url("images/rebased-logo-full.png");
-  background-size: 4rem;
+  text-indent: -9999px;
+  width: 10rem;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 body.menu-mobile-active {
