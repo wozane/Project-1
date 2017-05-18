@@ -66,6 +66,7 @@ body > header {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  background-color: white;
 }
 
 body.menu-mobile-active {
@@ -253,6 +254,7 @@ body > section > header > img {
   font-weight: 400;
   font-size: 3rem;
   text-align: center;
+  visibility: visible;
 }
 
 #team figure:hover .overlay {
@@ -535,6 +537,31 @@ body > section > header > img {
 
   #intro .intro-contact-email {
     color: white;
+  }
+
+  .intro-text {
+    position: relative;
+  }
+
+  .intro-text::before,
+  .intro-text::after {
+    font-size: 7.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #194fd6;
+    top: 1rem;
+    position: absolute;
+  }
+
+  .intro-text::before {
+    content: "{";
+    float: left;
+    left: -2rem;
+  }
+
+  .intro-text::after {
+    content: "}";
+    float: right;
+    right: -2rem;
   }
 
   #team ul {
