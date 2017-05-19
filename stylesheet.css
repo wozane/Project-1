@@ -92,7 +92,7 @@ body.menu-mobile-active #main-nav ul {
   height: 100vh;
 }
 
-body.menu-mobile-active #main-nav li a {
+body.menu-mobile-active #main-nav ul li a {
   display: block;
   color: white;
   padding: 1rem;
@@ -244,6 +244,16 @@ body > section > header > img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+#team figcaption p,
+#team figcaption footer {
+  display: none;
 }
 
 #team figcaption > header {
@@ -258,14 +268,20 @@ body > section > header > img {
 }
 
 #team figure:hover .overlay {
-  height: 100%
+  background-color: rgba(25,79,214,0.9);
+  transition: .5s ease;
+}
+
+#team figure:hover figcaption p,
+#team figure:hover figcaption footer {
+  display: block;
 }
 
 #team figure > img {
   width: 17.5rem;
   height: auto;
 }
-
+/*zmienic*/
 #team p {
   font-weight: 400;
   font-size: 0.8rem;
@@ -274,18 +290,6 @@ body > section > header > img {
   order: -1;
   text-align: center;
   padding: 0 0.8rem;
-}
-
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(25,79,214,0.9);
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: .5s ease;
 }
 
 #team figcaption > footer {
@@ -301,7 +305,7 @@ body > section > header > img {
   justify-content: center;
 }
 
-#projects li {
+#projects ul li {
   font-weight: 100;
   line-height: 150%;
   padding-top: 1.5rem 0;
@@ -673,6 +677,10 @@ body > section > header > img {
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  body {
+    background-position-y: 5rem;
+  }
+
   body > header {
     width: 100%;
   }
@@ -849,6 +857,7 @@ body > section > header > img {
   body {
     background: url("images/background.png") no-repeat;
     background-size: contain;
+    background-position-y: -12rem;
   }
 
   body > header {
