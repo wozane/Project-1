@@ -73,7 +73,7 @@ body.menu-mobile-active {
   overflow-y: hidden;
 }
 
-body.menu-mobile-active #main-nav:before{
+body nav:before{
   content: url("images/mobile-menu.png");
   width: auto;
   height: auto;
@@ -308,16 +308,19 @@ body > section > header > img {
 #projects ul li {
   font-weight: 100;
   line-height: 150%;
-  padding-top: 1.5rem 0;
+  padding-top: 1.5rem;
+  margin: 1rem 0;
 }
 
 #projects figure {
   display: table;
+  margin: auto;
 }
 
 #projects figure img {
-  margin: 1.3rem;
+  margin: auto;
   display: block;
+  padding-bottom: 1.5rem;
 }
 
 #projects figcaption {
@@ -329,7 +332,7 @@ body > section > header > img {
   text-align: center;
 }
 
-#open li {
+#open ul li {
   border-bottom: 0.1rem solid lightgrey;
   border-color: #8F8F8F;
   margin: 2.5rem 0;
@@ -345,7 +348,7 @@ body > section > header > img {
   padding-bottom: 0.5rem;
 }
 
-#open li > section {
+#open ul li section {
   padding: 1rem 0;
   display: flex;
   flex-direction: row;
@@ -353,14 +356,14 @@ body > section > header > img {
   margin-bottom: 2rem;
 }
 
-#open li > section > img {
+#open ul li section img {
   width: 6rem;
   height: 6rem;
   margin: 0.75rem;
 }
 
 /* community section */
-#community li {
+#community ul li {
   padding: 1.5rem 0;
 }
 
@@ -398,7 +401,7 @@ body > section > header > img {
 #sumup-page section {
   padding: 0;
 }
-#sumup-page figure > img {
+#sumup-page figure  img {
   display: block;
   padding: 0;
   height: 23rem;
@@ -746,22 +749,22 @@ body > section > header > img {
     margin: auto;
   }
 
-  #team li {
+  #team ul li {
     margin: 1.25rem;
     width: auto;
     height: auto;
   }
 
-  #team li > figure > img {
+  #team ul li figure img {
     width: 14rem;
   }
 
-  #team figcaption > header {
+  #team figcaption header {
     font-size: 1rem;
     text-align: center;
   }
 
-  #team figcaption > p {
+  #team figcaption p {
     font-weight: 100;
     font-size: 0.7rem;
   }
@@ -770,10 +773,10 @@ body > section > header > img {
     margin: 0;
   }
 
-  #projects li {
+  #projects ul li {
     flex-grow: 1;
     padding: 1rem;
-    max-height: 17rem;
+    height: 19rem;
   }
 
   #projects figure img {
@@ -781,7 +784,7 @@ body > section > header > img {
     height: auto;
   }
 
-  #open li {
+  #open ul li {
     display: flex;
     flex-direction: row;
     padding-top: 2rem;
