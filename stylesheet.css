@@ -558,13 +558,11 @@ body > section > header > img {
 
   .intro-text::before {
     content: "{";
-    float: left;
     left: -2rem;
   }
 
   .intro-text::after {
     content: "}";
-    float: right;
     right: -2rem;
   }
 
