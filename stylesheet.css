@@ -643,10 +643,13 @@ body > section > header > img {
     text-align: left;
   }
 
+  #sumup-page figure {
+    padding-bottom: 2rem;
+  }
+
   #sumup-page figure > img {
     width: auto;
     margin: auto;
-    padding: 2rem 0 6rem;
   }
 
   #sumup-page section > section {
@@ -829,7 +832,7 @@ body > section > header > img {
     line-height: 1.5;
   }
 
-  #open li > section {
+  #open ul li section {
     padding-top: 0;
   }
 
@@ -850,7 +853,7 @@ body > section > header > img {
   }
 
   #sumup-page section > section > img {
-    padding: 2rem;
+    padding: 1rem;
   }
 
   #sumup-page > section > section > p, address {
