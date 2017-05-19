@@ -587,7 +587,7 @@ body > section > header > img {
     margin: 2rem 0;
   }
 
-  #team li {
+  #team ul li {
     width: 20rem;
     margin: 3rem 1.25rem;
   }
@@ -602,7 +602,7 @@ body > section > header > img {
     align-items: center;
   }
 
-  #projects li {
+  #projects ul li {
     padding: 2rem;
   }
 
@@ -613,14 +613,14 @@ body > section > header > img {
     text-align: center;
   }
 
-  #open li {
+  #open ul li {
     border: none;
   }
-  #open li > section {
+  #open ul li section {
     justify-content: center;
   }
 
-  #open li > section > img {
+  #open ul li section img {
     margin: 0.5rem;
   }
 
