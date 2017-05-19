@@ -398,10 +398,14 @@ body > section > header > img {
   font-size: 1.8rem;
 }
 
+#sumup-page header img {
+  margin-bottom: 1.5rem;
+}
+
 #sumup-page section {
   padding: 0;
 }
-#sumup-page figure  img {
+#sumup-page figure img {
   display: block;
   padding: 0;
   height: 23rem;
@@ -509,6 +513,14 @@ body > section > header > img {
   #sumup-contact {
     padding: 1 calc((100% - 52rem)/2);
     width: 100%;
+  }
+  #team > header,
+  #projects > header,
+  #open > header,
+  #community > header,
+  #sumup-page > header,
+  #sumup-contact > header {
+    font-size: 3rem;
   }
 
   #intro {
