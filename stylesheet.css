@@ -881,7 +881,6 @@ body > section > header > img {
   body {
     background: url("images/background.png") no-repeat;
     background-size: contain;
-    background-position-y: -12rem;
   }
 
   body > header {
