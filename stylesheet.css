@@ -293,19 +293,27 @@ body > section > header > img {
   justify-content: center;
 }
 
-#team hr {
-  background: url("images/more-button.png") no-repeat center;
+#team #team-show-more {
   height: 2rem;
-  border-bottom: 0;
-  border-left: 0;
-  border-right: 0;
+  display: block;
+  border-top: 1px solid red;
+}
+
+#team #team-show-more:after {
+  position: absolute;
+  background: url(images/more-button.png) no-repeat center;
+  display: block;
+  content: "";
+  height: 2rem;
+  width: 4rem;
+  left: calc(50% - 2rem);
+  background-size: cover;
 }
 
 #team figure:hover .overlay {
   background-color: rgba(25,79,214,0.9);
   transition: .5s ease;
   -webkit-transition: .5s ease;
-  display: flex;
 }
 
 #team figure:hover figcaption header,
@@ -315,20 +323,8 @@ body > section > header > img {
 }
 
 #team figure:hover figcaption header h3 {
-  position: absolute;
-  order: 2;
-}
-
-#team figure:hover figcaption p {
-  order: -1;
-}
-
-#team figure:hover figcaption header {
-  order: 1;
-}
-
-#team figure:hover figcaption footer {
-  order: 2;
+  position: initial;
+  /* transition */
 }
 
 /* projects section */
