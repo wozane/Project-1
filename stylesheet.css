@@ -568,6 +568,7 @@ body > section > header > img {
 
   .intro-text {
     position: relative;
+    margin: 2rem;
   }
 
   .intro-text::before,
@@ -575,7 +576,7 @@ body > section > header > img {
     font-size: 7.5rem;
     font-family: 'Montserrat', sans-serif;
     color: #194fd6;
-    top: 1rem;
+    top: -2rem;
     position: absolute;
   }
 
@@ -770,6 +771,10 @@ body > section > header > img {
     padding-top: 3rem;
     width: 52rem;
     margin: auto;
+  }
+  .intro-text::before,
+  .intro-text::after {
+    top: 1rem;
   }
 
   #team ul li {
