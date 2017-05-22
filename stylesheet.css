@@ -56,7 +56,6 @@ body > header {
   align-items: center;
   font-family: "Montserrat";
   z-index: 1;
-  padding-left: 1rem;
 }
 
 #menu-company-logo {
@@ -68,6 +67,7 @@ body > header {
   background-size: contain;
   background-position: center;
   background-color: white;
+  margin-left: 1rem;
 }
 
 body.menu-mobile-active {
