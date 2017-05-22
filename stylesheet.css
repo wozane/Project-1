@@ -262,28 +262,23 @@ body > section > header > img {
 }
 
 #team h3 {
-  font-weight: 400;
-  font-size: 3rem;
-  text-align: center;
+  font-weight: 700;
+  font-size: 2.5rem;
   visibility: visible;
-}
-
-#team figure:hover .overlay {
-  background-color: rgba(25,79,214,0.9);
+  position: absolute;
+  top: 10rem;
+  right: 2rem;
+  font-family: "Montserrat",sans-serif;
   transition: .5s ease;
-}
-
-#team figure:hover figcaption p,
-#team figure:hover figcaption footer {
-  display: block;
+  -webkit-transition: .5s ease;
 }
 
 #team figure > img {
   width: 17.5rem;
   height: auto;
 }
-/*zmienic*/
-#team p {
+
+#team ul li figure figcaption p {
   font-weight: 400;
   font-size: 0.8rem;
   line-height: 1rem;
@@ -305,6 +300,37 @@ body > section > header > img {
   border-left: 0;
   border-right: 0;
 }
+
+#team figure:hover .overlay {
+  background-color: rgba(25,79,214,0.9);
+  transition: .5s ease;
+  -webkit-transition: .5s ease;
+  display: flex;
+}
+
+#team figure:hover figcaption header,
+#team figure:hover figcaption p,
+#team figure:hover figcaption footer {
+  display: block;
+}
+
+#team figure:hover figcaption header h3 {
+  position: absolute;
+  order: 2;
+}
+
+#team figure:hover figcaption p {
+  order: -1;
+}
+
+#team figure:hover figcaption header {
+  order: 1;
+}
+
+#team figure:hover figcaption footer {
+  order: 2;
+}
+
 /* projects section */
 #projects ul {
   display: flex;
@@ -772,6 +798,7 @@ body > section > header > img {
     width: 52rem;
     margin: auto;
   }
+
   .intro-text::before,
   .intro-text::after {
     top: 1rem;
@@ -795,6 +822,11 @@ body > section > header > img {
   #team figcaption p {
     font-weight: 100;
     font-size: 0.7rem;
+  }
+
+  #team ul li figure figcaption footer img {
+    width: auto;
+    margin: 0 0.5rem;
   }
 
   #projects ul {
