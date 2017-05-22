@@ -23,10 +23,7 @@ a:link {
 }
 
 /*-- link hovered --*/
-a:hover {
-  background-color: blue;
-  color: white;
-}
+
 
 /*body*/
 body {
@@ -74,14 +71,22 @@ body.menu-mobile-active {
   overflow-y: hidden;
 }
 
-body nav:before{
-  content: url("images/mobile-menu.png");
-  width: auto;
-  height: auto;
-  display: block;
+body nav:before {
+  content: '\2630';
   position: fixed;
   top: 1rem;
   right: 1rem;
+  font-size: 3rem;
+}
+
+body nav:hover {
+  content: '\2630';
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  color: white;
+  background-color: black;
 }
 
 body.menu-mobile-active #main-nav ul {
@@ -227,7 +232,7 @@ body > section > header > img {
   align-items: center;
 }
 
-#team li {
+#team ul li {
   margin: 2rem 0;
 }
 
@@ -264,10 +269,9 @@ body > section > header > img {
 #team h3 {
   font-weight: 700;
   font-size: 2.5rem;
-  visibility: visible;
   position: absolute;
-  top: 10rem;
-  right: 2rem;
+  top: 14rem;
+  right: 5rem;
   font-family: "Montserrat",sans-serif;
   transition: .5s ease;
   -webkit-transition: .5s ease;
@@ -296,11 +300,11 @@ body > section > header > img {
 #team #team-show-more {
   height: 2rem;
   display: block;
-  border-top: 1px solid red;
+  border-top: 1px solid grey;
 }
 
 #team #team-show-more:after {
-  position: absolute;
+  position: relative;
   background: url(images/more-button.png) no-repeat center;
   display: block;
   content: "";
@@ -308,6 +312,7 @@ body > section > header > img {
   width: 4rem;
   left: calc(50% - 2rem);
   background-size: cover;
+  top: -1px;
 }
 
 #team figure:hover .overlay {
@@ -324,7 +329,7 @@ body > section > header > img {
 
 #team figure:hover figcaption header h3 {
   position: initial;
-  /* transition */
+  padding-bottom: 0.5rem;
 }
 
 /* projects section */
