@@ -22,9 +22,6 @@ a:link {
   color: black;
 }
 
-/*-- link hovered --*/
-
-
 /*body*/
 body {
   font-family: 'Roboto', sans-serif;
@@ -739,38 +736,41 @@ body > section > header > img {
     background-position-y: 5rem;
   }
 
-  body > header {
+  body header {
     width: 100%;
   }
 
   body > header > img {
     width: 9rem;
+    padding-left: 0;
   }
 
-  body > header > nav:before {
+  body > header nav:before,
+  body > header nav:hover {
     display: none;
   }
 
-  body > header > nav {
+  body > header nav {
     max-width: initial;
     flex-grow: 7;
     padding-left: 4rem;
   }
 
-  body > header > nav > ul {
+  body > header nav ul {
     display: flex;
     position: initial;
   }
 
-  body > header > nav > ul > li {
+  body header nav ul li {
     padding: 0;
     margin: 0;
     line-height: 5rem;
     flex-grow: 1;
     justify-content: space-between;
+    background-color: white;
   }
 
-  body > header > nav > ul > li > a {
+  body header nav ul li a {
     height: 100%;
     display: block;
     color: black;
@@ -779,8 +779,9 @@ body > section > header > img {
     line-height: 4rem;
   }
 
-  body > header > img {
-    padding-left: 0;
+  body header nav ul a:hover {
+    background-color: #186bf5;
+    color: white;
   }
 
   #intro,
