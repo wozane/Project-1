@@ -271,7 +271,9 @@ body > section > header > img {
   font-size: 2.5rem;
   position: absolute;
   top: 14rem;
-  right: 5rem;
+  right: 0;
+  left: 0;
+  text-align: center;
   font-family: "Montserrat",sans-serif;
   transition: .5s ease;
   -webkit-transition: .5s ease;
@@ -632,6 +634,10 @@ body > section > header > img {
     width: 20rem;
   }
 
+  #team h3 {
+    top: 15rem;
+  }
+
   #projects ul {
     flex-flow: row wrap;
     justify-content: center;
@@ -953,5 +959,9 @@ body > section > header > img {
     font-size: 0.8rem;
     padding-top: 0;
     font-weight: 400;
+  }
+
+  #team h3 {
+    top: 10rem;
   }
 }
