@@ -510,6 +510,12 @@ body > section > header > img {
   font-weight: 100;
 }
 
+.request-for-contact {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  padding-bottom: 1.5rem;
+}
+
 #sumup-contact input {
   border: 0.02rem solid #DADADA;
   border-radius: 0.25rem;
