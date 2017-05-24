@@ -25,7 +25,7 @@ a:link {
 /*body*/
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 1.25rem;
   width: 100%;
   margin: auto;
   background-position: 0 5rem;
@@ -95,15 +95,22 @@ body.menu-mobile-active #main-nav ul {
   height: 100vh;
 }
 
+body.menu-mobile-active #main-nav ul li {
+  padding: 1.5rem 1rem;
+}
+
 body.menu-mobile-active #main-nav ul li a {
   display: block;
   color: white;
-  padding: 1rem;
+  font-family: "Roboto";
+  font-size: 1.25rem;
+  font-weight: 100;
+  margin: 0 1.25rem;
 }
 
 /* main body footer*/
 body > footer {
-  background: url(images/footer-mobile.png) no-repeat;
+  background: url("images/footer-mobile.png") no-repeat;
   background-size: cover;
   font-size: 0.8rem;
   line-height: 1.4;
