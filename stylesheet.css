@@ -843,6 +843,10 @@ body > section > header > img {
     text-align: center;
   }
 
+  #team h3 {
+    top: 10rem;
+  }
+
   #team figcaption p {
     font-weight: 100;
     font-size: 0.7rem;
@@ -976,9 +980,5 @@ body > section > header > img {
     font-size: 0.8rem;
     padding-top: 0;
     font-weight: 400;
-  }
-
-  #team h3 {
-    top: 10rem;
   }
 }
