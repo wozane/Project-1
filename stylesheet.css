@@ -750,18 +750,21 @@ body > section > header > img {
     width: 100%;
   }
 
-  body > header #main-nav {
+  body header #main-nav {
     max-width: initial;
     flex-grow: 7;
-    padding-left: 4rem;
   }
 
-  body > header nav ul {
+  body header #main-nav:before {
+    display: none;
+  }
+
+  body header #main-nav ul {
     display: flex;
     position: initial;
   }
 
-  body header nav ul li {
+  body header #main-nav ul li {
     padding: 0;
     margin: 0;
     line-height: 5rem;
@@ -770,18 +773,25 @@ body > section > header > img {
     background-color: white;
   }
 
-  body header nav ul li a {
+  body header #main-nav ul li a {
     height: 100%;
     display: block;
     color: black;
     text-align: center;
-    padding: 0.5rem;
-    line-height: 4rem;
+    line-height: 5rem;
+    font-size: 1rem;
+    font-family: "Roboto";
   }
 
-  body header nav ul a:hover {
+  body header #main-nav ul a:hover {
     background-color: #186bf5;
     color: white;
+  }
+
+  body header #menu-company-logo {
+    background-size: 75%;
+    background-position: left center;
+    flex-grow: 3;
   }
 
   #intro,
