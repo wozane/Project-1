@@ -954,7 +954,6 @@ body.expand-team-members #team ul {
   body {
     background: url("images/background.png") no-repeat;
     background-size: contain;
-    background-position: 0 -10vw;
   }
 
   body > header {
@@ -989,5 +988,11 @@ body.expand-team-members #team ul {
     font-size: 0.8rem;
     padding-top: 0;
     font-weight: 400;
+  }
+}
+
+@media (min-width: 1555px) {
+  body {
+    background-position: 0 -10vw;
   }
 }
