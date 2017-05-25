@@ -343,7 +343,7 @@ body > section > header > img {
   padding-bottom: 0.5rem;
 }
 
-body.expand-team-members #team ul {
+#team .expand-team-members ul {
   height: auto;
 }
 
@@ -662,10 +662,12 @@ body.expand-team-members #team ul {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    margin: 0 calc((100vw - 47rem)/2);
   }
 
   #projects ul li {
     padding: 2rem;
+    margin: 1.5rem;
   }
 
   #projects figcaption {
@@ -834,6 +836,10 @@ body.expand-team-members #team ul {
   .intro-text::before,
   .intro-text::after {
     top: 1rem;
+  }
+
+  #team ul {
+    height: 34rem;
   }
 
   #team ul li {

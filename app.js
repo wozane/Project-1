@@ -4,6 +4,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }, false);
 
   document.getElementById("team-show-more").addEventListener("click", function (event) {
-    document.querySelector("ul").classList.toggle("expand-team-members");
+    document.querySelector("team").classList.toggle("expand-team-members");
   }, false);
 });
