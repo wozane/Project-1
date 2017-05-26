@@ -464,7 +464,8 @@ body > section > header > img {
 #sumup-page figure img {
   display: block;
   padding: 0;
-  height: 23rem;
+  height: auto;
+  width: 90vw;
   margin: auto;
 }
 
