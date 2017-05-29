@@ -1,195 +1,1050 @@
-html {     
-  box-sizing: border-box; 
-} 
-
-*, *:before, *:after {     
-  box-sizing: inherit; 
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-  background-color: white;
-  font-family: Verdana, Arial, sans-serif;
-  margin-left: 25%;
-  margin-right: 25%;
+ul {
+  list-style-type: none;
 }
 
 li {
-  display: inline; 
+  text-decoration: none;
+}
+/*-- link --*/
+a {
+  text-decoration: none;
+  color: initial;
 }
 
-/*-- link --*/
 a:link {
   text-decoration: none;
   color: black;
 }
 
-/*-- link hovered --*/
-a:hover {
-    background-color: blue;
+/* Mobile devices*/
+  /*body*/
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    width: 100%;
+    margin: auto;
+    background-position: 0 5rem;
+    background: url("images/header.png") no-repeat;
+    background-position-y: 5rem;
+    box-sizing: border-box;
+    line-height: 1;
+  }
+
+  body section {
+    padding: 0 1.25rem;
+  }
+
+  body > header {
+    padding: 0 calc((100vw - 52rem)/2);
+    width: 100%;
+    background-color: white;
+    margin: auto;
+    height: 5rem;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat";
+    z-index: 1;
+  }
+
+  body header #menu-company-logo {
+    background-image: url("images/rebased-logo-full.png");
+    text-indent: -9999px;
+    width: 10rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: white;
+    margin-left: 1rem;
+  }
+
+  body header #main-nav:before {
+    content: '\2630';
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2rem;
+    padding: 1.2rem 1.6rem;
+    height: 5rem;
+  }
+
+  body header #main-nav ul {
+    height: 0;
+    background-color: #1E1E1E;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    overflow-y: scroll;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+  }
+
+  body.menu-mobile-active {
+    overflow-y: hidden;
+  }
+
+  body.menu-mobile-active header #main-nav:before {
     color: white;
-}
+    background-color: black;
+  }
 
-/*-- sections header --*/
-.section-header {
-  text-align: center;
-  font-size: 40px;
-  font-weight: 900;
-}
+  body.menu-mobile-active header #main-nav ul {
+    height: calc(100vh - 5rem);
+  }
 
-/*-- img in sections --*/
-.img-sec {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
+  body.menu-mobile-active header #main-nav ul li a {
+    display: block;
+    color: white;
+    font-family: "Roboto";
+    font-size: 1.25rem;
+    font-weight: 100;
+    margin: 0 1.25rem;
+    padding: 1.5rem 1rem;
+  }
 
-/*-- navigation class --*/
-.nav-bar {
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  word-spacing: 1em;
-}
+  /* main body footer*/
+  body > footer {
+    background: url("images/footer-mobile.png") no-repeat;
+    background-size: cover;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    padding: 2rem 0;
+  }
 
-/*-- intro seciton --*/
-.intro {
-  display: -webkit-flex;
-  display: -ms-flex;
-  -webkit-align-items: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-}
+  /*-- section's header --*/
+  body > section > header {
+    font-size: 2.25rem;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 5.5rem 0 0;
+  }
 
-.intro-header {
-  -webkit-flex: 2 0 0; 
-  flex: 2 0 0;
-  align-items: center;
-  justify-content: center;
-}
+  body section header img {
+    margin-top: 2rem;
+  }
 
-.intro-contact {
-  -webkit-flex: 1 0 0;
-  flex: 1 0 0;
-  padding: 15px;
-}
+  /* section intro*/
+  #intro {
+    display: flex;
+    flex-flow: column wrap;
+    padding-top: 3rem;
+    color: white;
+    font-family: "Montserrat";
+    padding-bottom: 3rem;
+  }
 
-.contact-box {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-  width: 200px; 
-  height: 25px;
-}
+  #intro header {
+    text-align: left;
+  }
 
-.submit-box {
-  background-color: #73e600;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  width: 200px; 
-  height: 25px;
-}
+  #intro header h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: 400;
+  }
 
-.text-right {
-  text-align: right;
-}
+  #intro header p {
+    font-size: 1.1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-weight: 100;
+    text-transform: none;
+  }
 
-.submit-text {
-  font-size: 75%;
-  text-align: justify;
-  text-justify: inter-word;
-  text-align: center;
-}
+  #intro section {
+    padding: 0;
+  }
 
-.intro-text {
-  text-align: center;
-}
+  #intro section h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    padding-bottom: 2rem;
+  }
 
-/*-- team section --*/
-.img-sec {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
+  #intro p {
+    line-height: 1.5rem;
+  }
 
-/*-- open source section --*/
-.open-logo {
-  display: block;
-  margin: auto;
-}
+  #intro section form input {
+    border: 0.01rem solid #fff;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 0.4rem 0;
+    width: 100%;
+    padding: 0.4rem;
+  }
 
-.open-border {
-  display: -webkit-flex;
-  display: -ms-flex;
-  -webkit-align-items: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  border-bottom: 2px solid lightgrey;
-}
+  #intro .submit-box {
+    background-color: #00ea84;
+    border: none;
+    border-radius: 2rem;
+    color: white;
+    font-weight: 400;
+    font-size: 1.25rem;
+  }
 
-.open-part {
-  display: block;
-  margin: auto;
-  float: right;
-}
+  #intro .intro-contact-email {
+    text-align: right;
+    padding-bottom: 1rem;
+    color: black;
+  }
 
-/*-- comm section --*/
-.comm-logo {
-  display: block;
-  margin: auto;
-  -webkit-flex: 1 0 0;
-  flex: 1 0 0;
-}
+  #intro section aside {
+    color: black;
+    font-size: 0.9rem;
+    padding: 1.7rem 0 0;
+    line-height: 1.2;
+    font-weight: 100;
+    font-family: "Roboto";
+  }
 
-/*-- sum up page --*/
-.address {
-  font-style: normal;
-}
+  .intro-text {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 100;
+    line-height: 1.5;
+    padding-bottom : 1rem;
+  }
 
-.sum-contact{
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  width: 150px; 
-  height: 25px;
-}
+  #intro .intro-line {
+    border: 1px solid white;
+    width: 2rem;
+    height: 0.1rem;
+    margin-top: 1rem;
+  }
 
-.sum-main-box {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
+  /* team section */
+  #team ul {
+    padding-top: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 45rem;
+    overflow: hidden;
+  }
 
-.sum-green {
-  color: #73e600;
-  font-size: 150%;
-  font-weight: normal;
-}
+  #team ul li {
+    margin: 2rem 0;
+  }
 
-/*-- footer --*/
-.footer {
-  background-color: blue;
-  color: white;
-  text-align: center;
-  font-size: 75%;
-}
+  #team ul li figure {
+    position: relative;
+    cursor: pointer;
+    margin: 0;
+  }
 
-/*-- id --*/
-#logo { float: left; }
+  #team ul li figure figcaption {
+    color: white;
+    font-weight: 100;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
 
+  #team ul li figure figcaption p,
+  #team ul li figure figcaption footer {
+    display: none;
+  }
+
+  #team ul li figure figcaption header {
+    padding: 1rem 0;
+  }
+
+  #team ul li figure figcaption header h3 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 14rem;
+    right: 0;
+    left: 0;
+    text-align: center;
+    font-family: "Montserrat",sans-serif;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    color: white;
+  }
+
+  #team ul li figure img {
+    width: 17.5rem;
+    height: auto;
+  }
+
+  #team ul li figure:hover figcaption p {
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    position: relative;
+    order: -1;
+    text-align: center;
+    padding: 0 0.8rem;
+  }
+
+  #team ul li figure:hover figcaption footer {
+    align-self: center;
+    justify-content: center;
+  }
+
+  #team ul li figure:hover .overlay {
+    background-color: rgba(25,79,214,0.9);
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+  }
+
+  #team ul li figure:hover figcaption header,
+  #team ul li figure:hover figcaption p,
+  #team ul li figure:hover figcaption footer {
+    display: block;
+  }
+
+  #team ul li figure:hover figcaption header h3 {
+    position: initial;
+    padding-bottom: 0.5rem;
+  }
+  #team ul li figure figcaption footer img {
+    width: auto;
+    margin: 0 0.5rem;
+  }
+
+  #team #team-show-more {
+    height: 2rem;
+    display: block;
+    border-top: 1px solid grey;
+    margin-top: 1rem;
+  }
+
+  #team #team-show-more:after {
+    position: relative;
+    background: url(images/more-button.png) no-repeat center;
+    display: block;
+    content: "";
+    height: 2rem;
+    width: 4rem;
+    left: calc(50% - 2rem);
+    background-size: cover;
+    top: -1px;
+  }
+
+  #team.expand-team-members #team-show-more:after {
+    transform: rotate(180deg);
+    top: -2rem;
+  }
+
+  #team.expand-team-members ul {
+    height: auto;
+  }
+
+  /* projects section */
+  #projects ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #projects ul li {
+    font-weight: 100;
+    line-height: 150%;
+    padding-top: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  #projects ul li figure {
+    display: table;
+    margin: auto;
+  }
+
+  #projects ul li figure img {
+    margin: 1.25rem;
+    display: block;
+    padding-bottom: 1.5rem;
+  }
+
+  #projects ul li figure figcaption {
+    text-align: center;
+  }
+
+  /* open source section */
+  #open {
+    text-align: center;
+  }
+
+  #open ul li {
+    border-bottom: 0.1rem solid lightgrey;
+    border-color: #8F8F8F;
+    margin: 2.5rem 0;
+  }
+
+  #open ul li figure figcaption header {
+    font-size: 1.75rem;
+    padding-bottom: 0.5rem;
+  }
+
+  #open ul li figure figcaption p {
+    line-height: 1.25;
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+
+  #open ul li section {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  #open ul li section img {
+    width: 6rem;
+    height: 6rem;
+    margin: 0.75rem;
+  }
+
+  /* community section */
+  #community ul li {
+    padding: 1.5rem 0;
+  }
+
+  #community ul li figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #community ul li figure figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #community ul li figure figcaption header {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 300
+  }
+
+  #community ul li figure figcaption p {
+    font-size: 0.9rem;
+    font-weight: 100;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  /* sumup-page section*/
+  #sumup-page header {
+    font-size: 1.8rem;
+  }
+
+  #sumup-page header img {
+    margin-bottom: 1.5rem;
+  }
+
+  #sumup-page section {
+    padding: 0;
+  }
+  #sumup-page section figure img {
+    display: block;
+    padding: 0;
+    height: auto;
+    width: 90vw;
+    margin: auto;
+  }
+
+  #sumup-page section section {
+    display: block;
+    line-height: 1.5;
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+
+  #sumup-page section section img {
+    margin: 0.5rem 0;
+  }
+
+  #sumup-page section section p {
+    text-align: center;
+    font-weight: 100;
+    padding: 0.5rem 0;
+  }
+
+  #sumup-page section section address {
+    font-style: normal;
+    font-weight: 100;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  #sumup-page section section p, 
+  #sumup-page section section address {
+    display: block;
+  }
+
+  #sumup-page section section p a {
+    color: blue;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* sumup-contact section */
+  #sumup-contact {
+    padding: 1rem 1.25rem;
+    text-align: center;
+    font-family: "Montserrat";
+  }
+
+  #sumup-contact p {
+    line-height: 1.3;
+  }
+
+  .sumup-slogan {
+    color: #00ea84;
+    font-size: 1.3rem;
+    margin: 1.5rem 0;
+    line-height: 1.5;
+    font-weight: 100;
+  }
+
+  .request-for-contact {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  #sumup-contact form input {
+    border: 0.02rem solid #DADADA;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 0.4rem 0;
+    width: 100%;
+    padding: 0.4rem;
+  }
+
+  #sumup-contact form input.sum-up-submitbox {
+    background-color: #00ea84;
+    display: block;
+    border: none;
+    margin: auto;
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 2rem;
+    color: white;
+    font-weight: 400;
+  }
+
+  #sumup-contact footer {
+    padding: 3rem 0;
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+/* Small devices (tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    body {
+      background-position-x: -4rem;
+      background-position-y: 2rem;
+    }
+
+    body.menu-mobile-active header #main-nav ul {
+      height: 50vh;
+    }
+
+    #team,
+    #projects,
+    #open,
+    #community,
+    #sumup-page,
+    #sumup-contact {
+      padding: 1 calc((100% - 52rem)/2);
+      width: 100%;
+    }
+
+    #team > header,
+    #projects > header,
+    #open > header,
+    #community > header,
+    #sumup-page > header,
+    #sumup-contact > header {
+      font-size: 3rem;
+    }
+
+    #intro {
+      display: flex;
+      flex-flow: nowrap; 
+    }
+
+    #intro header {
+      flex-basis: auto;
+      padding-top: 6rem;
+      padding-right: 2rem;
+    }
+
+    #intro header h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+    }
+
+    #intro header p {
+      font-size: 2.4rem;
+      padding-top: 1.4rem;
+      line-height: 1.2;
+    }
+
+    #intro section {
+      flex-basis: 24rem;
+      padding-top: 6rem;
+    }
+
+    #intro section form input {
+      margin: 0.5rem 0;
+    }
+
+    #intro .intro-contact-email {
+      color: white;
+    }
+
+    .intro-text {
+      position: relative;
+      margin: 2rem;
+    }
+
+    .intro-text::before,
+    .intro-text::after {
+      font-size: 7.5rem;
+      font-family: 'Montserrat', sans-serif;
+      color: #194fd6;
+      top: -2rem;
+      position: absolute;
+    }
+
+    .intro-text::before {
+      content: "{";
+      left: -2rem;
+    }
+
+    .intro-text::after {
+      content: "}";
+      right: -2rem;
+    }
+
+    #team ul {
+      flex-flow: row wrap;
+      justify-content: center;
+      margin: 2rem 0;
+      height: 46rem;
+    }
+
+    #team ul li {
+      width: 20rem;
+      margin: 1.5rem 1.25rem;
+    }
+
+    #team ul li figure  img {
+      width: 20rem;
+    }
+
+    #team ul li figure figcaption header h3  {
+      top: 15rem;
+    }
+
+    #projects ul {
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      margin: 0 calc((100vw - 47rem)/2);
+    }
+
+    #projects ul li {
+      padding: 2rem;
+    }
+
+    #projects ul li figure figcaption {
+      width: 100%;
+      display: table-caption;
+      caption-side: bottom;
+      text-align: center;
+      line-height: 150%;
+      font-size: 85%;
+    }
+
+    #open ul li {
+      border: none;
+    }
+    #open ul li section {
+      justify-content: center;
+    }
+
+    #open ul li section img {
+      margin: 0.5rem;
+    }
+
+    #community ul li figure {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    #community ul li figure figcaption {
+      padding-left: 4rem;
+    }
+
+    #community ul li figure figcaption header {
+      align-self: flex-start;
+      font-size: 2rem;
+      font-weight: 400;
+    }
+
+    #community ul li figure figcaption p {
+      text-align: left;
+    }
+
+    #sumup-page section figure {
+      padding-bottom: 2rem;
+    }
+
+    #sumup-page section figure img {
+      width: auto;
+      margin: auto;
+    }
+
+    #sumup-page section section {
+      overflow: auto;
+      padding: 0 calc((100vw - 52rem)/2);
+      margin: auto;
+    }
+
+    #sumup-page section section img {
+      padding-left: 10rem;
+      padding-bottom: 6rem;
+      float: left;
+    }
+
+    #sumup-page section section p, 
+    #sumup-page section section address {
+      display: block;
+      float: right;
+      width: 50%;
+      text-align: left;
+    }
+
+    #sumup-page section section address {
+      text-align: left;
+    }
+
+    #sumup-contact form input {
+      width: 40%;
+      max-width: 20rem;
+      margin: 1.5rem 0.5rem;
+    }
+
+    #sumup-contact form input.sum-up-submitbox {
+      width: initial;
+      padding: 0.5rem 2.5rem;
+    }
+
+    #sumup-contact footer {
+      padding: 3rem 8rem;
+    }
+  }
+
+/* Medium devices (desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    body {
+      background-position-y: 5rem;
+    }
+
+    body header {
+      width: 100%;
+    }
+
+    body header #main-nav,
+    body.menu-mobile-active {
+      max-width: initial;
+      flex-grow: 7;
+    }
+
+    body header #main-nav:before {
+      display: none;
+    }
+
+    body.menu-mobile-active {
+      overflow-y: scroll;
+    }
+
+    body header #main-nav ul,
+    body.menu-mobile-active header #main-nav ul {
+      display: flex;
+      position: initial;
+      height: 5rem;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+    }
+
+    body header #main-nav ul li,
+    body.menu-mobile-active header #main-nav ul li {
+      padding: 0;
+      margin: 0;
+      line-height: 5rem;
+      flex-grow: 1;
+      justify-content: space-between;
+      background-color: white;
+    }
+
+    body header #main-nav ul li a,
+    body.menu-mobile-active header #main-nav ul li a {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: block;
+      color: black;
+      text-align: center;
+      line-height: 5rem;
+      font-size: 1rem;
+      font-weight: initial;
+      font-family: "Roboto";
+    }
+
+    body header #main-nav ul li a:hover,
+    body.menu-mobile-active header #main-nav ul li a:hover {
+      background-color: #186bf5;
+      color: white;
+    }
+
+    body header #menu-company-logo,
+    body.menu-mobile-active header #menu-company-logo {
+      background-size: 75%;
+      background-position: left center;
+      flex-grow: 3;
+    }
+
+    #intro,
+    #team,
+    #projects,
+    #open,
+    #community,
+    #sumup-page,
+    #sumup-contact {
+      padding: 0 calc((100% - 52rem)/2);
+      width: 100%;
+    }
+
+    #intro {
+      padding-top: 5rem;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+
+    .intro-text {
+      padding-top: 3rem;
+      width: 52rem;
+      margin: auto;
+    }
+
+    .intro-text::before,
+    .intro-text::after {
+      top: 1rem;
+    }
+
+    #team ul {
+      height: 34rem;
+    }
+
+    #team ul li {
+      margin: 1.25rem;
+      width: auto;
+      height: auto;
+    }
+
+    #team ul li figure img {
+      width: 14rem;
+    }
+
+    #team ul li figure figcaption header {
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    #team ul li figure figcaption header h3 {
+      top: 10rem;
+    }
+
+    #team ul li figure figcaption p {
+      font-weight: 100;
+      font-size: 0.7rem;
+    }
+
+    #team ul li figure figcaption footer img {
+      width: auto;
+      margin: 0 0.5rem;
+    }
+
+    #projects ul {
+      margin: 0;
+    }
+
+    #projects ul li {
+      flex-grow: 1;
+      padding: 1rem;
+      height: 22rem;
+      margin: 0;
+    }
+
+    #projects ul li:nth-child(1),
+    #projects ul li:nth-child(2),
+    #projects ul li:nth-child(3) {
+      border-bottom: 1px solid #d6d6d6;
+    }
+
+    #projects ul li:nth-child(2),
+    #projects ul li:nth-child(5) {
+      border-right: 1px solid #d6d6d6;
+      border-left: 1px solid #d6d6d6;
+    }
+
+    #projects ul li figure img {
+      width: 12rem;
+      height: auto;
+    }
+
+    #open ul li {
+      display: flex;
+      flex-direction: row;
+      padding-top: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom-width: medium;
+      border-bottom: 0.1rem solid lightgrey;
+      border-color: #8F8F8F;
+    }
+
+    #open ul li figure {
+      display: flex;
+    }
+
+    #open ul li figure img {
+      padding-right: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    #open ul li figure figcaption {
+      text-align: left;
+    }
+
+    #open ul li figure figcaption header {
+      padding-bottom: 1rem;
+    }
+
+    #open ul li figure figcaption p {
+      font-weight: 100;
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+
+    #open ul li section {
+      padding-top: 0;
+    }
+
+    #sumup-page section {
+      display: flex;
+      justify-content: center;
+    }
+
+    #sumup-page section section {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0 0 0 3rem;
+    }
+
+    #sumup-page section figure img {
+      padding: 0;
+    }
+
+    #sumup-page section section img {
+      padding: 1rem;
+    }
+
+    #sumup-page section section p, 
+    #sumup-page section section address {
+      padding-left: 1rem;
+      width: 100%;
+      text-align: left;
+    }
+
+    #sumup-page section section address {
+      padding: 0.5rem 0 0.5rem 1rem; 
+      text-align: left;
+    }
+  }
+
+/* Large devices (large desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    body {
+      background: url("images/background.png") no-repeat;
+      background-size: contain;
+    }
+
+    body > header {
+      padding: 0 calc((100vw - 52rem)/2);
+    }
+
+    #intro {
+      padding: 0 calc((100vw - 52rem)/2);
+    }
+
+    #intro header {
+      padding-top: 12rem;
+    }
+
+    #intro header h1 {
+      font-size: 3.75rem;
+    }
+
+    #intro section {
+      padding-top: 8rem;
+    }
+
+    #intro section h2 {
+      padding-bottom: 1rem;
+    }
+
+    .intro-line {
+      margin-top: 1rem;
+    }
+
+    #intro section aside {
+      font-size: 0.8rem;
+      padding-top: 0;
+      font-weight: 400;
+    }
+  }
+
+  @media only screen and (min-width: 1555px) {
+    body {
+      background-position: 0 -10vw;
+    }
+  }
