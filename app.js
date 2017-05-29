@@ -1,17 +1,17 @@
 document.addEventListener("DOMContentLoaded", function (event) {
   document.getElementById("main-nav").addEventListener("click", function (event) {
-    event.preventDefault();
     document.querySelector("body").classList.toggle("menu-mobile-active");
   });
 
   document.getElementById("team-show-more").addEventListener("click", function (event) {
     event.preventDefault();
-    document.querySelector("#team").classList.toggle("expand-team-members");
+    var teamSection = document.getElementById("team");
+    teamSection.classList.toggle("expand-team-members");
+
+    if(!teamSection.classList.contains("expand-team-members")) {
+      window.scrollTo(0, teamSection.offsetTop);
+    };
   });
 
-  document.getElementById("team-show-more").addEventListener("click", function (event) {
-    event.preventDefault();
-    var teamTop = document.getElementById("team").offsetTop;
-    document.querySelector("#team").scrollTo(teamTop);
-  });
+  document.getElementById("main-nav").addEventListener()
 });
