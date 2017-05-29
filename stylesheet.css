@@ -560,7 +560,7 @@ body > section > header > img {
 }
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   body {
     background-position-x: -4rem;
     background-position-y: 2rem;
@@ -767,7 +767,7 @@ body > section > header > img {
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   body {
     background-position-y: 5rem;
   }
@@ -991,7 +991,7 @@ body > section > header > img {
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   body {
     background: url("images/background.png") no-repeat;
     background-size: contain;
@@ -1032,7 +1032,7 @@ body > section > header > img {
   }
 }
 
-@media (min-width: 1555px) {
+@media only screen and (min-width: 1555px) {
   body {
     background-position: 0 -10vw;
   }
