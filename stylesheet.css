@@ -81,8 +81,7 @@
 
   body.menu-mobile-active {
     overflow-y: hidden;
-    transition: 5s ease;
-    -webkit-transition: 5s ease;
+
   }
 
   body.menu-mobile-active header #main-nav:before {
@@ -99,6 +98,8 @@
     width: 100%;
     height: calc(100vh - 5rem);
     overflow-y: scroll;
+    transition: 5s ease;
+    -webkit-transition: 5s ease;
   }
 
   body.menu-mobile-active header #main-nav ul li a {
@@ -251,7 +252,7 @@
     margin: 0;
   }
 
-  #team ul li figure:hover figcaption {
+  #team ul li figure figcaption {
     color: white;
     font-weight: 100;
     font-size: 1.5rem;
@@ -309,6 +310,27 @@
     justify-content: center;
   }
 
+  #team ul li figure:hover .overlay {
+    background-color: rgba(25,79,214,0.9);
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+  }
+
+  #team ul li figure:hover figcaption header,
+  #team ul li figure:hover figcaption p,
+  #team ul li figure:hover figcaption footer {
+    display: block;
+  }
+
+  #team ul li figure:hover figcaption header h3 {
+    position: initial;
+    padding-bottom: 0.5rem;
+  }
+  #team ul li figure figcaption footer img {
+    width: auto;
+    margin: 0 0.5rem;
+  }
+
   #team #team-show-more {
     height: 2rem;
     display: block;
@@ -331,23 +353,6 @@
   #team.expand-team-members #team-show-more:after {
     transform: rotate(180deg);
     top: -2rem;
-  }
-
-  #team figure:hover .overlay {
-    background-color: rgba(25,79,214,0.9);
-    transition: .5s ease;
-    -webkit-transition: .5s ease;
-  }
-
-  #team figure:hover figcaption header,
-  #team figure:hover figcaption p,
-  #team figure:hover figcaption footer {
-    display: block;
-  }
-
-  #team figure:hover figcaption header h3 {
-    position: initial;
-    padding-bottom: 0.5rem;
   }
 
   #team.expand-team-members ul {
@@ -654,7 +659,7 @@
       flex-flow: row wrap;
       justify-content: center;
       margin: 2rem 0;
-      height: 52rem;
+      height: 46rem;
     }
 
     #team ul li {
