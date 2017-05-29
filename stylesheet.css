@@ -100,10 +100,6 @@ body.menu-mobile-active #main-nav ul {
   overflow-y: scroll;
 }
 
-body.menu-mobile-active #main-nav ul li {
-  padding: 1.5rem 1rem;
-}
-
 body.menu-mobile-active #main-nav ul li a {
   display: block;
   color: white;
@@ -111,6 +107,7 @@ body.menu-mobile-active #main-nav ul li a {
   font-size: 1.25rem;
   font-weight: 100;
   margin: 0 1.25rem;
+  padding: 1.5rem 1rem;
 }
 
 /* main body footer*/
